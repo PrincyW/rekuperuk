@@ -1,0 +1,39 @@
+p {
+  color: #616e5a;
+  font: zila-slab;
+}
+
+h1 {
+  color: #616e5a;
+  font-size: large;
+  font-family: zilla-slab;
+}
+
+#carouselExampleCaptions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: $beige;
+}
+
+.carousel-inner {
+  background-color: $white;
+}
+
+.carousel-item {
+  background-color: $white;
+  // display: flex;
+  // padding: 200px;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.carousel-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: $white;
+}
