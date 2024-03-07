@@ -1,1 +1,4 @@
-<%= render "shared/index-card" %>
+
+<% @wigs.each do |wig| %>
+  <%= render "shared/index-card", wig: wig %>
+<% end %>
