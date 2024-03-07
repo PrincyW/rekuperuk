@@ -25,23 +25,23 @@ red = Color.create!(name: "Red", hexa: "#890B10")
 grey = Color.create!(name: "Grey", hexa: "#95939E")
 
 puts "Creation of textures..."
-smooth = Texture.create!(name: "Smooth", icon: File.open("/home/princy/code/PrincyW/rekuperuk/app/assets/images/smooth.png"))
-curly = Texture.create!(name: "Curly", icon: File.open("/home/princy/code/PrincyW/rekuperuk/app/assets/images/curly.png"))
-frizzy = Texture.create!(name: "Frizzy", icon: File.open("/home/princy/code/PrincyW/rekuperuk/app/assets/images/frizzy.png"))
+smooth = Texture.create!(name: "Smooth", icon: File.open("app/assets/images/smooth.png"))
+curly = Texture.create!(name: "Curly", icon: File.open("app/assets/images/curly.png"))
+frizzy = Texture.create!(name: "Frizzy", icon: File.open("app/assets/images/frizzy.png"))
 
 puts "Creation of sizes..."
-small = Size.create!(name: "Small", icon: File.open("/home/princy/code/PrincyW/rekuperuk/app/assets/images/small.png"))
-medium = Size.create!(name: "Medium", icon: File.open("/home/princy/code/PrincyW/rekuperuk/app/assets/images/medium.png"))
-large = Size.create!(name: "Large", icon: File.path("/home/princy/code/PrincyW/rekuperuk/app/assets/images/large.png"))
+small = Size.create!(name: "Small", icon: File.open("app/assets/images/small.png"))
+medium = Size.create!(name: "Medium", icon: File.open("app/assets/images/medium.png"))
+large = Size.create!(name: "Large", icon: File.path("app/assets/images/large.png"))
 
 puts "Creation of lengths..."
-short = Length.create!(name: "Short", icon: File.open("/home/princy/code/PrincyW/rekuperuk/app/assets/images/short.png"))
-bob = Length.create!(name: "Bob", icon: File.open("/home/princy/code/PrincyW/rekuperuk/app/assets/images/bob.png"))
-mid_length = Length.create!(name: "Mid-length", icon: File.open("/home/princy/code/PrincyW/rekuperuk/app/assets/images/mid_long.png"))
-long = Length.create!(name: "Long", icon: File.open("/home/princy/code/PrincyW/rekuperuk/app/assets/images/long.png"))
+short = Length.create!(name: "Short", icon: File.open("app/assets/images/short.png"))
+bob = Length.create!(name: "Bob", icon: File.open("app/assets/images/bob.png"))
+mid_length = Length.create!(name: "Mid-length", icon: File.open("app/assets/images/mid_long.png"))
+long = Length.create!(name: "Long", icon: File.open("app/assets/images/long.png"))
 
 puts "Creation of wigs..."
-image_path = "/home/princy/code/PrincyW/rekuperuk/app/assets/images/Wig 1 - front.jpg"
+image_path = "app/assets/images/Wig 1 - front.jpg"
 
 # Blonde wigs
 puts "Creation of Blonde wigs..."
