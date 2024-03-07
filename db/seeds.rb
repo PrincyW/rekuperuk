@@ -4,11 +4,12 @@
 
 
 puts "Destroying the precedent seeds..."
+Wig.destroy_all
 Color.destroy_all
 Texture.destroy_all
 Size.destroy_all
 Length.destroy_all
-Wig.destroy_all
+
 User.destroy_all
 
 puts "Creation of the users..."
@@ -27,7 +28,7 @@ grey = Color.create!(name: "Grey", hexa: "#95939E")
 puts "Creation of textures..."
 smooth = Texture.create!(name: "Smooth", icon: File.open("app/assets/images/smooth.png"))
 curly = Texture.create!(name: "Curly", icon: File.open("app/assets/images/curly.png"))
-frizzy = Texture.create!(name: "Frizzy", icon: File.open("app/assets/images/frizzy.png"))
+frizzy = Texture.create!(name: "Frizzy", icon: File.open("app/assets/images/Wig 1 - front.jpg"))
 
 puts "Creation of sizes..."
 small = Size.create!(name: "Small", icon: File.open("app/assets/images/small.png"))
@@ -41,124 +42,124 @@ mid_length = Length.create!(name: "Mid-length", icon: File.open("app/assets/imag
 long = Length.create!(name: "Long", icon: File.open("app/assets/images/long.png"))
 
 puts "Creation of wigs..."
-image_path = "app/assets/images/Wig 1 - front.jpg"
+
 
 # Blonde wigs
 puts "Creation of Blonde wigs..."
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: smooth, size: small, length: bob)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: smooth, size: small, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: smooth, size: small, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: smooth, size: small, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: smooth, size: small, length: bob)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: smooth, size: small, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: smooth, size: small, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: smooth, size: small, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: smooth, size: large, length: bob)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: smooth, size: large, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: smooth, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: smooth, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: smooth, size: large, length: bob)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: smooth, size: large, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: smooth, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: smooth, size: large, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: curly, size: small, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: curly, size: small, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: curly, size: small, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: curly, size: small, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: curly, size: small, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: curly, size: small, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: curly, size: large, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: curly, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: blonde, texture: curly, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: curly, size: large, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: curly, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: curly, size: large, length: mid_length)
 
 # Red wigs
 puts "Creation of Red wigs..."
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: smooth, size: small, length: bob)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: smooth, size: small, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: smooth, size: small, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: smooth, size: small, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: smooth, size: small, length: bob)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: smooth, size: small, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: smooth, size: small, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: smooth, size: small, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: smooth, size: large, length: bob)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: smooth, size: large, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: smooth, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: smooth, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: smooth, size: large, length: bob)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: smooth, size: large, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: smooth, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: smooth, size: large, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: curly, size: small, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: curly, size: small, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: curly, size: small, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: curly, size: small, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: curly, size: small, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: curly, size: small, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: curly, size: large, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: curly, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: red, texture: curly, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: curly, size: large, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: curly, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: red, texture: curly, size: large, length: mid_length)
 
 # Black Wigs
 puts "Creation of Black wigs..."
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: smooth, size: small, length: bob)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: smooth, size: small, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: smooth, size: small, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: smooth, size: small, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: smooth, size: small, length: bob)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: smooth, size: small, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: smooth, size: small, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: smooth, size: small, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: smooth, size: large, length: bob)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: smooth, size: large, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: smooth, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: smooth, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: smooth, size: large, length: bob)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: smooth, size: large, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: smooth, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: smooth, size: large, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: curly, size: small, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: curly, size: small, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: curly, size: small, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: curly, size: small, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: curly, size: small, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: curly, size: small, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: curly, size: large, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: curly, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: curly, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: curly, size: large, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: curly, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: curly, size: large, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: frizzy, size: small, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: frizzy, size: small, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: frizzy, size: small, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: frizzy, size: small, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: frizzy, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: black, texture: frizzy, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: frizzy, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: black, texture: frizzy, size: large, length: mid_length)
 
 # Brown wigs
 puts "Creation of Brown wigs..."
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: smooth, size: small, length: bob)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: smooth, size: small, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: smooth, size: small, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: smooth, size: small, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: smooth, size: small, length: bob)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: smooth, size: small, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: smooth, size: small, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: smooth, size: small, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: smooth, size: large, length: bob)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: smooth, size: large, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: smooth, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: smooth, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: smooth, size: large, length: bob)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: smooth, size: large, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: smooth, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: smooth, size: large, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: curly, size: small, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: curly, size: small, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: curly, size: small, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: curly, size: small, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: curly, size: small, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: curly, size: small, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: curly, size: large, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: curly, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: curly, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: curly, size: large, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: curly, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: curly, size: large, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: frizzy, size: small, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: frizzy, size: small, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: frizzy, size: small, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: frizzy, size: small, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: frizzy, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: brown, texture: frizzy, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: frizzy, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: brown, texture: frizzy, size: large, length: mid_length)
 
 # Grey wigs
 puts "Creation of Grey wigs..."
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: smooth, size: medium, length: bob)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: smooth, size: medium, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: smooth, size: medium, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: smooth, size: medium, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: smooth, size: medium, length: bob)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: smooth, size: medium, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: smooth, size: medium, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: smooth, size: medium, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: smooth, size: large, length: bob)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: smooth, size: large, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: smooth, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: smooth, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: smooth, size: large, length: bob)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: smooth, size: large, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: smooth, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: smooth, size: large, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: curly, size: medium, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: curly, size: medium, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: curly, size: medium, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: curly, size: medium, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: curly, size: medium, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: curly, size: medium, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: curly, size: large, length: long)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: curly, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: curly, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: curly, size: large, length: long)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: curly, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: curly, size: large, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: frizzy, size: medium, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: frizzy, size: medium, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: frizzy, size: medium, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: frizzy, size: medium, length: mid_length)
 
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: frizzy, size: large, length: short)
-Wig.create!(photo1: File.open(image_path), photo2: File.open(image_path), photo3: File.open(image_path), user: asso, color: grey, texture: frizzy, size: large, length: mid_length)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: frizzy, size: large, length: short)
+Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: grey, texture: frizzy, size: large, length: mid_length)
 
 puts "All seeds successfully updated! The End."
