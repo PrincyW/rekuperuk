@@ -2,9 +2,6 @@
 
 <%# Color dropdown %>
 <div class="dropdown">
-    <%# <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Color
-    </button> %>
     <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Color
     </button>
@@ -14,5 +11,39 @@
       <li><button class="dropdown-item" type="button">Brown</button></li>
       <li><button class="dropdown-item" type="button">Grey</button></li>
       <li><button class="dropdown-item" type="button">Red</button></li>
+    </ul>
+</div>
+
+<%# Size dropdown %>
+
+<div class="dropdown">
+    <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Size
+    </button>
+    <ul class="dropdown-menu" id="color-dropdown">
+      <li>
+        <div class="checkbox">
+          <label for="myCheckbox">S</label>
+        </div>
+        <div class="label">
+          <input type="checkbox" id="myCheckbox" name="myCheckbox">
+        </div>
+      </li>
+      <li>
+        <div class="checkbox">
+          <label for="myCheckbox">M</label>
+        </div>
+        <div class="label">
+          <input type="checkbox" id="myCheckbox" name="myCheckbox">
+        </div>
+      </li>
+      <li>
+        <div class="checkbox">
+          <label for="myCheckbox">L</label>
+        </div>
+        <div class="label">
+          <input type="checkbox" id="myCheckbox" name="myCheckbox">
+        </div>
+      </li>
     </ul>
 </div>
