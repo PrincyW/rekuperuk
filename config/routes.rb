@@ -11,8 +11,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :wigs, only: [:index, :show] do
-
     # resources :bookings, only: [:new, :create]
   end
-
 end
