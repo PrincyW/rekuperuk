@@ -1,12 +1,25 @@
 .dropdown button {
-  color: white;
+  color: $white;
+  text-align: center;
+}
+
+.dropdown button:active,
+.dropdown button:focus {
+  color: $dark-green;
 }
 
 #color-dropdown {
-  width: 100vw;
+  width: 100%;
   background-color: $white;
+}
+
+#color-dropdown li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
 }
 
 #color-dropdown li button {
   color: $black;
+  text-align: left;
 }
