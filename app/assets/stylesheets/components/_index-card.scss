@@ -1,0 +1,27 @@
+.card {
+  width: 18rem;
+  background-color: $white;
+  border-radius: 0.8rem;
+  outline: none;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.img-container-index {
+  width: 100%;
+}
+
+.img-container-index img {
+  width: 100%;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.card-body h5 {
+  font-weight: bold;
+  font-family: 'Zilla Slab';
+}
+
+.card-body p {
+  font-size: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
