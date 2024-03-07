@@ -74,4 +74,67 @@
   font-weight: 500;
 }
 
+.dark-green-btn:hover {
+  background-color: transparent;
+  border: 1px solid $dark-green;
+}
+
+.dark-green-btn:hover a {
+  color: $dark-green;
+}
+
 // Log in, sign up, wig donation, alert buttons
+
+.dark-green-lg-btn {
+  padding: 0.8rem 1rem;
+  width: 50%;
+  background-color: $dark-green;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+}
+
+.dark-green-lg-btn a {
+  text-decoration: none;
+  color: $white;
+  font-family: 'Zilla Slab';
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.dark-green-lg-btn:hover {
+  background-color: transparent;
+  border: 1px solid $dark-green;
+}
+
+.dark-green-lg-btn:hover a {
+  color: $dark-green;
+}
+
+// Back to previous page green button
+
+.dark-green-back-btn {
+  padding: 0.6rem 0.8rem;
+  width: 18%;
+  background-color: $dark-green;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+}
+
+.dark-green-back-btn a {
+  text-decoration: none;
+  color: $white;
+  font-family: 'Zilla Slab';
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.dark-green-back-btn:hover {
+  background-color: transparent;
+  border: 1px solid $dark-green;
+}
+
+.dark-green-back-btn:hover a {
+  color: $dark-green;
+}
