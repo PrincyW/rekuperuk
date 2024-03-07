@@ -1,12 +1,20 @@
-p {
-  color: #616e5a;
-  font: zila-slab;
+// Specific CSS for your home-page
+
+.container-fluid {
+  margin-top: 16px;
 }
 
-h1 {
+p {
+  color: $black;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h3 {
   color: #616e5a;
-  font-size: large;
-  font-family: zilla-slab;
+  // font-size: 20px;
+  font-family: zilla slab;
+  text-align: center;
 }
 
 #carouselExampleCaptions {
@@ -24,10 +32,7 @@ body {
 
 .carousel-item {
   background-color: $white;
-  // display: flex;
-  // padding: 200px;
-  // justify-content: center;
-  // align-items: center;
+  height: 200px;
 }
 
 .carousel-item-container {
@@ -36,4 +41,17 @@ body {
   align-items: center;
   padding: 20px;
   background-color: $white;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin-top: 16px;
 }
