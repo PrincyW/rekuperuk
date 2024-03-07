@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: $green;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +9,29 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+#navbarSupportedContent {
+  background-color: $white;
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+  color: transparent;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: $white;
+}
+
+.navbar-lewagon li {
+  list-style-type: none;
+}
+
+#avatar-dropdown {
+  background-color: $white;
 }
