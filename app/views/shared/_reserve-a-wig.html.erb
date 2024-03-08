@@ -1,0 +1,22 @@
+<main class="individual-wig-container">
+    <div id="prev-btn-container">
+        <button class="dark-green-back-btn" id="prev-btn">
+              <%= link_to "Back", wigs_path %>
+        </button>
+    </div>
+
+    <%= render "shared/order-recap-card" %>
+
+    <div class="delivery-options">
+      <div class="post-office">
+        <button class="post-office-img">
+            <%= image_tag "paper-plane.png", alt:"paper plane image" %>
+        </button>
+      </div>
+      <div class="on-site">
+        <button class="delivery-on-site-img">
+          <%= image_tag "giving.png", alt:"hand to hand image" %>
+        </button>
+      </div>
+    </div>
+</main>

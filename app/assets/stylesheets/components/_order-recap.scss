@@ -1,0 +1,33 @@
+#order-recap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 12rem;
+  background-color: $white;
+}
+
+.img-container-recap {
+  width: 50%;
+  margin-left: 0.5rem;
+  margin-right: 0.4rem;
+}
+
+.img-container-recap img {
+  width: 10rem;
+  border-radius: 0.8rem;
+}
+
+#prev-btn {
+  width: 4rem;
+  margin-top: 2rem;
+}
+
+#individual-wig-recap h6 {
+  font-weight: 600;
+}
+
+#individual-wig-recap h6 span {
+  font-weight: 300;
+}
