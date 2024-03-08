@@ -1,0 +1,28 @@
+.individual-wig-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.btn-container {
+  position: absolute;
+  top: 3.5rem;
+  left: 3rem;
+}
+
+#individual-wig-card {
+  margin-bottom: 2rem;
+}
+
+#back-btn {
+  width: 4rem;
+  margin-top: 2rem;
+}
