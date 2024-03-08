@@ -1,14 +1,15 @@
+<%= link_to wig_path(wig) do  %>
+<div class="wigs-cards">
+  <div class= "img-container-index">
+    <%= image_tag wig.photo1, alt:"photo of wig", class: "index-img" %>
+  </div>
 
+<% end %>
 
-<div class="card d-flex align-items-center justify-content-center">
-    <div class= "img-container-index">
-        <%= image_tag wig.photo1, alt:"photo of wig", class: "index-img" %>
-    </div>
-    <div class="card-body">
-      <div class="textbox">
-        <h5>Color </h5> <p><%= wig.color.name%></p>
-        <h5>Size </h5> <p><%= wig.size.name%></p>
-        <h5>Texture</h5> <p><%= wig.texture.name%></p>
-        <h5>Length</h5> <p><%= wig.length.name%></p></div>
-    </div>
+  <div class="card-body">
+        <div class="d-flex align-center"><h5>Color   </h5> <span><%= wig.color.name%></span></div>
+        <div class="d-flex align-center"><h5>Size   </h5> <span><%= wig.size.name%></span></div>
+        <div class="d-flex align-center"><h5>Texture  </h5> <span><%= wig.texture.name%></span></div>
+        <div class="d-flex align-center"><h5>Length  </h5> <span><%= wig.length.name%></span></div>
+      </div>
 </div>
