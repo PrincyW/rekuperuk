@@ -1,5 +1,11 @@
-
-<% @wigs.each do |wig| %>
-  <%= render "shared/index-card", wig: wig %>
-<% end %>
+<div class="container">
+<%# <div class="wigs-cards"> %>
+<div class="filter-btn-container">
   <%= render "shared/dropdown-menus" %>
+</div>
+
+  <% @wigs.each do |wig| %>
+    <%= render "shared/index-card", wig: wig %>
+  <% end %>
+<%# </div> %>
+</div>
