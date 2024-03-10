@@ -11,8 +11,9 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :wigs, only: [:index, :show] do
-      member do
-        get  :recap
-      end
+    resources :acquisitions, only: [:new, :create]
+    member do
+      get  :recap
+    end
   end
 end
