@@ -1,0 +1,11 @@
+<div class="card" id="order-recap">
+      <div class= "img-container-recap">
+          <%= image_tag "2woman-put-wig-in-box.jpeg", alt:"photo of wig", class: "index-img" %>
+      </div>
+      <div class="card-body" id="individual-wig-recap">
+          <h6 class="card-title">Color: <span><%= @wig.color.name %></span></h6>
+          <h6 class="card-title">Size: <span><%= @wig.size.name %></span></h6>
+          <h6 class="card-title">Type: <span><%= @wig.texture.name %></span></h6>
+          <h6 class="card-title">Length: <span><%= @wig.length.name %></span></h6>
+      </div>
+</div>

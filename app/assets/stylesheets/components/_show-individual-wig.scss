@@ -1,0 +1,52 @@
+.individual-wig-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.btn-container {
+  position: absolute;
+  top: 3.5rem;
+  left: 2.5rem;
+}
+
+#individual-wig-card {
+  margin-bottom: 2rem;
+}
+
+#back-btn {
+  width: 4rem;
+  margin-top: 2rem;
+}
+
+.delivery-options {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.post-office {
+  margin-right: 2rem;
+}
+
+.post-office-img,
+.delivery-on-site-img {
+  background-color: $white;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.8rem;
+}
+
+.post-office-img img,
+.delivery-on-site-img img {
+  width: 5rem;
+}
