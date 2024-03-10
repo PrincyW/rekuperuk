@@ -6,26 +6,21 @@
       <span class="navbar-toggler-icon" style="color: white;"></span>
     </button>
 
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "Logo-Blanc-sans-texte.png" %>
     <% end %>
     <%# End of Burger Menu Button %>
 
     <%# Log in area %>
-
-        <% if user_signed_in? %>
-        <li class="nav-item dropdown">
-                <%= image_tag current_user.avatar_url, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" id="avatar-dropdown">
-                  <%= link_to "Log out", "#", class: "dropdown-item", data: {turbo_method: :delete} %>
-                </div>
-        </li>
-        <% else %>
-          <!--li class="nav-item"-->
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          <!--/li-->
-        <% end %>
-
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path, method: :delete, data: { turbo_method: :delete } do %>
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      <% end %>
+    <% else %>
+      <!--li class="nav-item"-->
+        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+      <!--/li-->
+    <% end %>
    <%# End of Login Area %>
   </div>
 </div>
