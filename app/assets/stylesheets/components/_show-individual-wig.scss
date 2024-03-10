@@ -1,6 +1,7 @@
 .individual-wig-container {
-  width: 100%;
-  height: 100vh;
+  // width: 100%;
+  // height: 100vh;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,6 +26,24 @@
 #back-btn {
   width: 4rem;
   margin-top: 2rem;
+  background-color: $dark-green;
+}
+
+#back-btn a {
+  text-decoration: none;
+  color: $white;
+  font-family: "Zilla Slab";
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+#back-btn:hover {
+  background-color: transparent;
+  border: 1px solid $dark-green;
+}
+
+#back-btn:hover a {
+  color: $dark-green;
 }
 
 .delivery-options {
@@ -49,4 +68,43 @@
 .post-office-img img,
 .delivery-on-site-img img {
   width: 5rem;
+}
+
+// CSS Styles for section inviting user to visit FAQ & Tutorials page for tips on wig care and hairstyles
+
+.faq-tutorials-link-section {
+  margin: 1rem;
+  width: 100%;
+  // background-color: $light-green;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+}
+
+.section-text-container {
+  display: flex;
+  align-items: center;
+  line-height: 1.2rem;
+}
+
+.section-text-container p {
+  margin-top: 0.6rem;
+}
+
+.section-text-container a {
+  text-decoration: none;
+  color: $dark-green;
+  font-weight: 400;
+}
+
+.section-icon-container {
+  margin-left: 0.3rem;
+}
+
+.section-icon-container img {
+  width: 6rem;
+  border-radius: 50%;
 }

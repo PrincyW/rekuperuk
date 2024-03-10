@@ -6,7 +6,7 @@
       <span class="navbar-toggler-icon" style="color: white;"></span>
     </button>
 
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "Logo-Blanc-sans-texte.png" %>
     <% end %>
     <%# End of Burger Menu Button %>
@@ -34,7 +34,7 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
           <li class="nav-item active">
-            <%= link_to "Index", wigs_path, class: "nav-link" %>
+            <%= link_to "Gallery", wigs_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "About Us", "#", class: "nav-link" %>
@@ -43,7 +43,7 @@
             <%= link_to "FAQ & Tutorials", "#", class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Chatroom", "#", class: "nav-link" %>
+            <%= link_to "Blog", "#", class: "nav-link" %>
           </li>
       </ul>
 </div>
