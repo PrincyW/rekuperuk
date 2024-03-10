@@ -2,6 +2,7 @@
   <h2>Vos informations de livraison</h2>
 
   <%= simple_form_for [@wig, @acquisition], url: wig_acquisitions_path(@wig) do |f| %>
+    <%= f.hidden_field :delivery, id: "delivery-field" %>
     <%= f.input :delivery_name, label: "Nom de livraison" %>
     <%= f.input :delivery_address, label: "Adresse de livraison (N° + rue)" %>
     <%= f.input :delivery_zipcode, label: "Code postal" %>
@@ -16,6 +17,7 @@
     <p>Adresse de l'association : 2 avenue des Saules, 59160 Lille <br> Metro 2 - Canteleu, 8 min à pieds</p>
 
     <%= simple_form_for [@wig, @acquisition], url: wig_acquisitions_path(@wig) do |f| %>
+      <%= f.hidden_field :delivery, id: "delivery-field" %>
       <%= f.input :date_time, as: :date, order: [:day, :month, :year], label: "Choisir une date de retrait" %>
       <%#= f.input :acquisition_hour, as: :time, label: "Choose an Appointment Time", minute_step: 15, ampm: true %>
       <%= f.button :submit, "Ok", data: { confirm: "Notez que vous ne pouvez acquérir qu'une perruque. Confirmez-vous votre demande ?" } %>

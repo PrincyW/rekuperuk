@@ -43,7 +43,6 @@ long = Length.create!(name: "Long", icon: File.open("app/assets/images/long.png"
 
 puts "Creation of wigs..."
 
-
 # Blonde wigs
 puts "Creation of Blonde wigs..."
 Wig.create!(photo1: "Wig 1 - front.jpg", photo2: "Wig 1 - front.jpg", photo3: "Wig 1 - front.jpg", user: asso, color: blonde, texture: smooth, size: small, length: bob)
