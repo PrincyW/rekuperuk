@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
+  get '/about', to: 'pages#about_us'
+
   resources :wigs, only: [:index, :show] do
       member do
         get  :recap
