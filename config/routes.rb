@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   get '/about', to: 'pages#about_us'
 
+  resources :donations, only: [:new, :create]
   resources :wigs, only: [:index, :show] do
     resources :acquisitions, only: [:new, :create]
     member do

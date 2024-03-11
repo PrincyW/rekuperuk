@@ -6,12 +6,9 @@
     <%= image_tag wig.photo1, alt:"photo of wig", class: "index-img" %>
   </div>
 
-<% end %>
-
-  <div class="card-body">
-        <div class="d-flex align-center"><h5>Color   </h5> <span><%= wig.color.name%></span></div>
-        <div class="d-flex align-center"><h5>Size   </h5> <span><%= wig.size.name%></span></div>
-        <div class="d-flex align-center"><h5>Texture  </h5> <span><%= wig.texture.name%></span></div>
-        <div class="d-flex align-center"><h5>Length  </h5> <span><%= wig.length.name%></span></div>
-      </div>
+  <div class="card-body d-flex justify-content-around">
+      <span><i class="fa-solid fa-circle <%= wig.color.name.downcase %>" ></i></span>
+        <%= image_tag wig.size.icon, class: "size-icon"%>
+  </div>
 </div>
+<% end %>

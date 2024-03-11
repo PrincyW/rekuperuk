@@ -4,23 +4,6 @@
   align-items: center;
 }
 
-// .filter-btn-container button {
-//   padding: 0.8rem 1rem;
-//   width: 20%;
-//   background-color: $dark-green;
-//   border: none;
-//   outline: none;
-//   border-radius: 0.6rem;
-// }
-
-// .dark-green-btn a {
-//   text-decoration: none;
-//   color: $white;
-//   font-family: "Zilla Slab";
-//   font-size: 0.8rem;
-//   font-weight: 500;
-// }
-
 .card {
   width: 19rem;
   background-color: $white;
@@ -57,8 +40,52 @@
 }
 
 .wigs-cards {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.wig-container-all {
   display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 10px;
+  a {
+    text-decoration: none;
+  }
+}
+.icon-container {
+  width: 10px;
+  height: 10px;
+}
+
+.fa-solid fa-circle {
+  color: $dark-pink; /* Default color */
+  font-size: 25px; /* Adjust according to your icon's size */
+}
+
+.fa-solid fa-ruler {
+  color: $dark-pink; /* Default color */
+  font-size: 10px; /* Adjust according to your icon's size */
+}
+
+.size-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.black {
+  color: #000000;
+}
+
+.brown {
+  color: #8c523b;
+}
+
+.blonde {
+  color: #d2b196;
+}
+.red {
+  color: #890b10;
+}
+
+.grey {
+  color: #95939e;
 }

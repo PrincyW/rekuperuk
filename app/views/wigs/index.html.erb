@@ -4,8 +4,10 @@
   <%= render "shared/dropdown-menus" %>
 </div>
 
-  <% @wigs.each do |wig| %>
-    <%= render "shared/index-card", wig: wig %>
-  <% end %>
+  <div class="wig-container-all">
+    <% @wigs.each do |wig| %>
+      <%= render "shared/index-card", wig: wig %>
+    <% end %>
+  </div>
 <%# </div> %>
 </div>
