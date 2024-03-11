@@ -1,37 +1,38 @@
-<main class="individual-wig-container">
-  <div id="prev-btn-container">
-    <button class="dark-green-back-btn" id="prev-btn">
-      <%= link_to wigs_path do %>
-        <i class="fa-solid fa-arrow-left"></i>
-      <% end %>
-    </button>
-  </div>
 
-  <%= render "shared/order-recap-card" %>
-
-  <div class="delivery-options">
-    <div class="post-office">
-      <button class="post-office-img" onclick="updateDeliveryAndRedirect(true)">
-        <%= image_tag "paper-plane.png", alt: "paper plane image" %>
-      </button>
+<main class="individual-wig-recap">
+    <div id="prev-btn-container">
+        <button class="dark-green-back-btn" id="prev-btn">
+             <%= link_to wig_path(@wig) do %>
+                <i class="fa-solid fa-arrow-left"></i>
+              <% end %>
+        </button>
     </div>
-    <div class="on-site">
-      <button class="delivery-on-site-img" onclick="updateDeliveryAndRedirect(false)">
-        <%= image_tag "giving.png", alt: "hand to hand image" %>
-      </button>
+
+    <%= render "shared/order-recap-card" %>
+
+    <div class="delivery-options">
+      <div class="post-office">
+        <button class="post-office-img" onclick="updateDeliveryAndRedirect(true)">
+          <%= image_tag "paper-plane.png", alt: "paper plane image" %>
+        </button>
+      </div>
+      <div class="on-site">
+        <button class="delivery-on-site-img" onclick="updateDeliveryAndRedirect(false)">
+          <%= image_tag "giving.png", alt: "hand to hand image" %>
+        </button>
+      </div>
     </div>
-  </div>
 
-  <script>
-    function updateDeliveryAndRedirect(value) {
-      // Update the hidden field value
-      console.log(document.getElementById('delivery-field'))
-      document.getElementById('delivery-field').value = value;
-      // console.log('Value updated:', value);
+    <script>
+      function updateDeliveryAndRedirect(value) {
+        // Update the hidden field value
+        console.log(document.getElementById('delivery-field'))
+        document.getElementById('delivery-field').value = value;
+        // console.log('Value updated:', value);
 
-      // Redirect to the new acquisition view
-      window.location.href = '<%= new_wig_acquisition_path(@wig) %>';
-    }
-  </script>
+        // Redirect to the new acquisition view
+        window.location.href = '<%= new_wig_acquisition_path(@wig) %>';
+      }
+    </script>
 
-</main>
+  </main>

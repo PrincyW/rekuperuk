@@ -4,28 +4,42 @@
   margin-top: 12px;
 }
 
-.dropdown button {
+.dropdown-filter button {
   color: $white;
-  text-align: center;
+  font-family: 'Zilla Slab';
+  padding: 0.8rem 1rem;
+  width: 20%;
 }
 
-.dropdown button:active,
-.dropdown button:focus {
+.dropdown-filter button a {
+  text-decoration: none;
+  color: $white;
+  font-family: "Zilla Slab";
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.dropdown-filter button:hover {
+  background-color: transparent;
+  border: 1px solid $dark-green;
+}
+
+.dropdown-filter button:hover a {
   color: $dark-green;
 }
 
-#color-dropdown {
+#filter-dropdown {
   width: 100%;
   background-color: $white;
 }
 
-#color-dropdown li {
+#filter-dropdown li {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
 }
 
-#color-dropdown li button {
+#filter-dropdown li button {
   color: $black;
   text-align: left;
 }
