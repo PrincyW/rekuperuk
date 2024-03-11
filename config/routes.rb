@@ -13,8 +13,9 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about_us'
 
   resources :wigs, only: [:index, :show] do
-      member do
-        get  :recap
-      end
+    resources :acquisitions, only: [:new, :create]
+    member do
+      get  :recap
+    end
   end
 end

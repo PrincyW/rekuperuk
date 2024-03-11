@@ -2,8 +2,8 @@ class WigsController < ApplicationController
 
 
   before_action :set_wig, only: [:show, :recap]
-  skip_before_action :authenticate_user!, only: [:index]
- 
+  skip_before_action :authenticate_user!, only: [:index, :show]
+
 
   def index
     @wigs = Wig.all
