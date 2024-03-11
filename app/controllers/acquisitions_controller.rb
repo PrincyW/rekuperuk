@@ -19,7 +19,11 @@ class AcquisitionsController < ApplicationController
 
   private
 
-  def setting_wig
+  def set_wig
     @wig = Wig.find(params[:wig_id])
+  end
+
+  def acquisition_params
+    params.require(:acquisition).permit(:delivery_name, :delivery_address, :delivery_zipcode, :city, :date_time, :medical_reasons)
   end
 end
