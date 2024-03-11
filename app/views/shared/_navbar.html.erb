@@ -14,11 +14,11 @@
     <%# Log in area %>
     <% if user_signed_in? %>
       <%= link_to destroy_user_session_path, method: :delete, data: { turbo_method: :delete } do %>
-        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i>
       <% end %>
     <% else %>
       <!--li class="nav-item"-->
-        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+        <%= link_to "Login", new_user_session_path, class: "nav-link", id:"log-in-link" %>
       <!--/li-->
     <% end %>
    <%# End of Login Area %>
