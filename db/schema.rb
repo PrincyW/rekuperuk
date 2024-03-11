@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_07_105242) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_11_134555) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -25,6 +25,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_07_105242) do
     t.string "delivery_address"
     t.string "delivery_city"
     t.string "delivery_zipcode"
+    t.boolean "medical_reasons"
     t.index ["user_id"], name: "index_acquisitions_on_user_id"
     t.index ["wig_id"], name: "index_acquisitions_on_wig_id"
   end
