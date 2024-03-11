@@ -5,7 +5,9 @@
 
     <div class="btn-container">
         <button class="dark-green-back-btn" id="back-btn">
-              <%= link_to "Back", wigs_path %>
+              <%= link_to wigs_path do %>
+                <i class="fa-solid fa-arrow-left"></i>
+              <% end %>
         </button>
     </div>
 

@@ -11,11 +11,13 @@
     <%= simple_form_for(@donation) do |f| %>
       <%= f.input :donator_email %>
       <%= f.input :description, as: :text %>
-      <%= f.input :photo_1, as: :file %>
-      <%= f.input :photo_2, as: :file %>
-      <%= f.input :photo_3, as: :file %>
-      <%= f.submit 'Confirm add', class: "btn btn-success", id: "donation-submit-btn" %>
+      <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+      <%= f.submit 'Confirm donation', class: "btn btn-success", id: "donation-submit-btn" %>
     <% end %>
-</div>
+  </div>
+
+  <div class="link-container">
+     <%= link_to "Homepage", root_path %>
+  </div>
 
 </main>
