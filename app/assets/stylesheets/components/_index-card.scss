@@ -40,8 +40,8 @@
 }
 
 .wigs-cards {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .wig-container-all {
   display: grid;
@@ -50,4 +50,42 @@
   a {
     text-decoration: none;
   }
+}
+.icon-container {
+  width: 10px;
+  height: 10px;
+}
+
+.fa-solid fa-circle {
+  color: $dark-pink; /* Default color */
+  font-size: 25px; /* Adjust according to your icon's size */
+}
+
+.fa-solid fa-ruler {
+  color: $dark-pink; /* Default color */
+  font-size: 10px; /* Adjust according to your icon's size */
+}
+
+.size-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.black {
+  color: #000000;
+}
+
+.brown {
+  color: #8c523b;
+}
+
+.blonde {
+  color: #d2b196;
+}
+.red {
+  color: #890b10;
+}
+
+.grey {
+  color: #95939e;
 }
