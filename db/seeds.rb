@@ -31,15 +31,15 @@ curly = Texture.create!(name: "Curly", icon: File.open("app/assets/images/curly.
 frizzy = Texture.create!(name: "Frizzy", icon: File.open("app/assets/images/Wig 1 - front.jpg"))
 
 puts "Creation of sizes..."
-small = Size.create!(name: "Small", icon: File.open("app/assets/images/small.png"))
-medium = Size.create!(name: "Medium", icon: File.open("app/assets/images/medium.png"))
-large = Size.create!(name: "Large", icon: File.path("app/assets/images/large.png"))
+small = Size.create!(name: "Small", icon: "small.png")
+medium = Size.create!(name: "Medium", icon: "medium.png")
+large = Size.create!(name: "Large", icon: "large.png")
 
 puts "Creation of lengths..."
-short = Length.create!(name: "Short", icon: File.open("app/assets/images/short.png"))
-bob = Length.create!(name: "Bob", icon: File.open("app/assets/images/bob.png"))
-mid_length = Length.create!(name: "Mid-length", icon: File.open("app/assets/images/mid_long.png"))
-long = Length.create!(name: "Long", icon: File.open("app/assets/images/long.png"))
+short = Length.create!(name: "Short", icon: "short.png")
+bob = Length.create!(name: "Bob", icon: "bob.png")
+mid_length = Length.create!(name: "Mid-length", icon: "mid_long.png")
+long = Length.create!(name: "Long", icon: "long.png")
 
 puts "Creation of wigs..."
 
