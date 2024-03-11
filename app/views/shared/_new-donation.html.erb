@@ -7,8 +7,20 @@
       <div class="donation-underline"></div>
   </div>
 
-  <div class="container d-flex justify-content-center">
-    <%= simple_form_for(@donation) do |f| %>
+  <div class="container d-flex justify-content-center" data-controller="alert">
+    <%= simple_form_for(@donation,
+      html: {
+        data: {
+          controller: "alerts",
+          alert_icon_value: "warning",
+          alert_title_value: "Are your sure?",
+          alert_html_value: "Create new post.",
+          confirm_button_text: "All good!",
+          show_cancel_button: true,
+          cancel_button_text: "Cancel",
+          action: "submit->alert#initSweetalertDonation",
+          turbo: false
+        } }) do |f| %>
       <%= f.input :donator_email %>
       <%= f.input :description, as: :text %>
       <%= f.input :photos, as: :file, input_html: { multiple: true } %>
