@@ -36,9 +36,7 @@
   border-radius: 0.5rem;
 }
 
-#donation_photo_1,
-#donation_photo_2,
-#donation_photo_3 {
+#donation_photos {
   font-family: 'Zilla Slab';
 }
 
@@ -53,7 +51,20 @@
   border: none;
   font-family: 'Zila Slab';
   margin-top: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   padding: 0.8rem 1rem;
+}
+
+.link-container {
+  margin-top: 0.8rem;
+  display: grid;
+  place-items: center;
+}
+
+.link-container a {
+  font-family: 'Zilla Slab';
+  text-decoration: none;
+  color: $dark-pink;
+  font-weight: 500;
 }

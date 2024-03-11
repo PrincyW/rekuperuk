@@ -1,4 +1,7 @@
 class DonationsController < ApplicationController
+
+  skip_before_action :authenticate_user!, only: [:new, :create]
+
   def new
     @donation = Donation.new
   end
@@ -15,6 +18,6 @@ class DonationsController < ApplicationController
   private
 
   def donation_params
-    params.require(:donation).permit(:donator_email, :description, :photos)
+    params.require(:donation).permit(:donator_email, :description, photos: [])
   end
 end
