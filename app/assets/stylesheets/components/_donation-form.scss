@@ -1,0 +1,59 @@
+.form-donation {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.donation-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.donation-heading {
+  font-family: 'Zilla Slab';
+  font-size: 3rem;
+  font-weight: 300;
+  color: $black;
+  margin-bottom: 2rem;
+}
+
+.donation-underline {
+  width: 11rem;
+  height: 0.3rem;
+  background-color: $dark-pink;
+}
+
+#new_donation label {
+  font-family: 'Zilla Slab';
+  color: $black;
+  font-size: 1rem;
+}
+
+#new_donation input,
+#new_donation textarea {
+  width: 16rem;
+  border-radius: 0.5rem;
+}
+
+#donation_photo_1,
+#donation_photo_2,
+#donation_photo_3 {
+  font-family: 'Zilla Slab';
+}
+
+.donation-description {
+  color: $black;
+}
+
+#donation-submit-btn {
+  background-color: $dark-pink;
+  color: $white;
+  outline: none;
+  border: none;
+  font-family: 'Zila Slab';
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.8rem 1rem;
+}
