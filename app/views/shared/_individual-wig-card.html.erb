@@ -31,10 +31,15 @@
 
     <%# End of Carousel %>
 
-    <div class="card-body" id="individual-wig-info">
-        <h6 class="card-title">Color: <span><%= @wig.color.name %></span></h6>
-        <h6 class="card-title">Size: <span><%= @wig.size.name %></span></h6>
-        <h6 class="card-title">Type: <span><%= @wig.texture.name %></span></h6>
-        <h6 class="card-title">Length: <span><%= @wig.length.name %></span></h6>
+       <div class="card-body d-flex" id="individual-wig-info">
+      <div>
+          <h6 class="card-title">Color: <span><%= @wig.color.name %></span></h6>
+          <h6 class="card-title">Size: <span><%= @wig.size.name %></span></h6>
+      </div>
+
+      <div>
+          <h6 class="card-title">Type: <span><%= @wig.texture.name %></span></h6>
+          <h6 class="card-title">Length: <span><%= @wig.length.name %></span></h6>
+      </div>
     </div>
 </div>
