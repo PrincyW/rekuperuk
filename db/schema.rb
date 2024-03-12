@@ -25,6 +25,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_11_135202) do
     t.string "delivery_address"
     t.string "delivery_city"
     t.string "delivery_zipcode"
+    t.boolean "medical_reasons"
     t.index ["user_id"], name: "index_acquisitions_on_user_id"
     t.index ["wig_id"], name: "index_acquisitions_on_wig_id"
   end

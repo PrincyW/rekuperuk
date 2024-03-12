@@ -9,10 +9,14 @@ class DonationsController < ApplicationController
   def create
     @donation = Donation.new(donation_params)
     if @donation.save
-      redirect_to wigs_path
+      redirect_to confirmation_donation_path(@donation)
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  # Method associated with route towards donation confirmation
+  def confirmation
   end
 
   private
