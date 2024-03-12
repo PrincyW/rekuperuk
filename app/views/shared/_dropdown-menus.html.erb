@@ -2,117 +2,55 @@
 
 <%# Color dropdown %>
 <div class="dropdown-filter">
-    <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Color
-    </button>
-    <ul class="dropdown-menu" id="filter-dropdown">
-      <li><button class="dropdown-item" type="button">Black</button></li>
-      <li><button class="dropdown-item" type="button">Blonde</button></li>
-      <li><button class="dropdown-item" type="button">Brown</button></li>
-      <li><button class="dropdown-item" type="button">Grey</button></li>
-      <li><button class="dropdown-item" type="button">Red</button></li>
-    </ul>
+  <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Couleur
+  </button>
+<ul class="dropdown-menu" id="filter-dropdown">
+    <li><%= link_to wigs_path(color: 'Black'), class: "dropdown-item" do %>Brun<% end %></li>
+    <li><%= link_to wigs_path(color: 'Blonde'), class: "dropdown-item" do %>Blonde<% end %></li>
+    <li><%= link_to wigs_path(color: 'Brown'), class: "dropdown-item" do %>Châtain<% end %></li>
+    <li><%= link_to wigs_path(color: 'Grey'), class: "dropdown-item" do %>Sel et poivre<% end %></li>
+    <li><%= link_to wigs_path(color: 'Red'), class: "dropdown-item" do %>Roux<% end %></li>
+  </ul>
 </div>
 
 <%# Size dropdown %>
 
 <div class="dropdown-filter">
-    <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Size
-    </button>
-    <ul class="dropdown-menu" id="filter-dropdown">
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">S</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">M</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">L</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-    </ul>
+  <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Taille
+  </button>
+  <ul class="dropdown-menu" id="filter-dropdown">
+    <li><%= link_to wigs_path(size: 'Small'), class: "dropdown-item" do %>S<% end %></li>
+    <li><%= link_to wigs_path(size: 'Medium'), class: "dropdown-item" do %>M<% end %></li>
+    <li><%= link_to wigs_path(size: 'Large'), class: "dropdown-item" do %>L<% end %></li>
+  </ul>
 </div>
 
 <%# dropdown for type %>
 
 <div class="dropdown-filter">
-    <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Type
-    </button>
-    <ul class="dropdown-menu" id="filter-dropdown">
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Straight</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Curly</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Frizzy</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-    </ul>
+  <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Texture
+  </button>
+  <ul class="dropdown-menu" id="filter-dropdown">
+    <li><button class="dropdown-item" type="button">Lisse</button></li>
+    <li><button class="dropdown-item" type="button">Bouclé</button></li>
+    <li><button class="dropdown-item" type="button">Crépu</button></li>
+  </ul>
 </div>
 
 <%# dropdown for length %>
 
 
 <div class="dropdown-filter">
-    <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Length
-    </button>
-    <ul class="dropdown-menu" id="filter-dropdown">
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Short</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Medium</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Long</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-    </ul>
+  <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Coupe
+  </button>
+  <ul class="dropdown-menu" id="filter-dropdown">
+    <li><button class="dropdown-item" type="button">Court</button></li>
+    <li><button class="dropdown-item" type="button">Carré</button></li>
+    <li><button class="dropdown-item" type="button">Mi-long</button></li>
+    <li><button class="dropdown-item" type="button">Long</button></li>
+  </ul>
 </div>
