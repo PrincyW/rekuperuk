@@ -1,0 +1,33 @@
+<main class="reservation-confirmation">
+
+  <section class="reservation-card">
+    <div class="font-awesome-reservation-container">
+          <i class="fa-solid fa-heart fa-5x"></i>
+          <h2>Merci d'avoir réservé une perruque!</h2>
+          <h6>Votre numéro de commande est : # <%= Acquisition.last.id %></h6>
+          <% if Acquisition.last.delivery %>
+            <p>Votre perruque sera livrée à l'adresse suivante :</p>
+            <div class="address-recap-container">
+                <p>
+                  <%= Acquisition.last.delivery_address %>
+                </p>
+                <p>
+                  <span>
+                    <%= Acquisition.last.delivery_zipcode %>
+                    <%= Acquisition.last.delivery_city %>
+                  </span>
+                </p>
+              </div>
+          <% end %>
+    </div>
+
+      <div class="confirmation-message">
+        <p>Vous recevrez également un récapitulatif de votre commande par email.</p>
+      </div>
+
+      <div class="homepage-btn-reservation">
+        <%= link_to "Homepage", home_path %>
+      </div>
+  </section>
+
+</main>
