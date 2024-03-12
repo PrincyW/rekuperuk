@@ -6,7 +6,7 @@
 
 .dropdown-filter button {
   color: $white;
-  font-family: 'Zilla Slab';
+  font-family: "Zilla Slab";
   padding: 0.8rem 1rem;
   width: 20%;
 }
@@ -42,4 +42,12 @@
 #filter-dropdown li button {
   color: $black;
   text-align: left;
+}
+
+.nav-link {
+  color: $dark-green;
+  font-family: "Zilla Slab";
+  font-size: large;
+  font-weight: 600;
+  text-decoration: none;
 }
