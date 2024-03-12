@@ -14,6 +14,10 @@ class WigsController < ApplicationController
 
   # Temporary route for page where customer can see the recap of their order
   def recap
+    if current_user.acquisitions.exists?
+      flash[:alert] = "Vous avez déjà réservé une perruque."
+      redirect_to wigs_path
+    end
   end
 
   private

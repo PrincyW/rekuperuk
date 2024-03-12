@@ -1,9 +1,9 @@
 <main class="individual-wig-recap">
   <div id="prev-btn-container">
       <button class="dark-green-back-btn" id="prev-btn">
-            <%= link_to wig_path(@wig) do %>
-              <i class="fa-solid fa-arrow-left"></i>
-            <% end %>
+        <%= link_to wig_path(@wig) do %>
+          <i class="fa-solid fa-arrow-left"></i>
+        <% end %>
       </button>
   </div>
 
@@ -11,14 +11,14 @@
 
   <div class="delivery-options">
     <div class="post-office">
-      <button class="post-office-img" onclick="updateDeliveryAndRedirect(true)">
+      <%= link_to new_wig_acquisition_path(@wig, delivery: true), class: "post-office-img" do %>
         <%= image_tag "paper-plane.png", alt: "paper plane image" %>
-      </button>
+      <% end %>
     </div>
     <div class="on-site">
-      <button class="delivery-on-site-img" onclick="updateDeliveryAndRedirect(false)">
+      <%= link_to new_wig_acquisition_path(@wig, delivery: false), class: "delivery-on-site-img" do %>
         <%= image_tag "giving.png", alt: "hand to hand image" %>
-      </button>
+      <% end %>
     </div>
   </div>
 </main>

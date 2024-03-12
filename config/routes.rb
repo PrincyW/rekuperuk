@@ -18,7 +18,7 @@ Rails.application.routes.draw do
       end
     end
   resources :wigs, only: [:index, :show] do
-    resources :acquisitions, only: [:new, :create]
+    resources :acquisitions, only: [:new, :create, :edit, :update]
     member do
       get  :recap
     end

@@ -1,12 +1,13 @@
-<% if @acquisition.delivery == true %>
+<% if params[:delivery] == "true" %>
   <h2>Vos informations de livraison</h2>
 
   <%= simple_form_for [@wig, @acquisition], url: wig_acquisitions_path(@wig) do |f| %>
     <%= f.input :delivery_name, label: "Nom de livraison" %>
     <%= f.input :delivery_address, label: "Adresse de livraison (N° + rue)" %>
     <%= f.input :delivery_zipcode, label: "Code postal" %>
-    <%= f.input :city, collection: Acquisition::CITIES, include_blank: 'Ville' %>
+    <%= f.input :delivery_city, collection: Acquisition::CITIES, label: "Ville", include_blank: 'Ville' %>
     <%= f.input :medical_reasons, as: :boolean, label: "Je certifie sur l'honneur avoir besoin d'une perruque pour des raisons médicales", required: true %>
+    <%= f.input :delivery, as: :boolean, checked_value: true, unchecked_value: false, value: false,  input_html: {class: "d-none", checked: true}, label: false %>
     <%= f.button :submit, "Ok", data: { confirm: "Notez que vous ne pouvez acquérir qu'une perruque. Confirmez-vous votre demande ?" } %>
   <% end %>
 
@@ -20,7 +21,7 @@
                 as: :string,
                 input_html: { data: { controller: "flatpickr", flatpickr_target:"slot" } } %>
       <%= f.input :medical_reasons, as: :boolean, label: "Je certifie sur l'honneur avoir besoin d'une perruque pour des raisons médicales", required: true %>
+      <%= f.input :delivery, as: :boolean, checked_value: false, unchecked_value: true, value: false,  input_html: {class: "d-none", checked: false}, label: false %>
       <%= f.button :submit, "Ok", data: { confirm: "Notez que vous ne pouvez acquérir qu'une perruque. Confirmez-vous votre demande ?" } %>
     <% end %>
-
 <% end %>
