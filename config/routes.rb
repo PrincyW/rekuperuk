@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   resources :donations, only: [:new, :create]
   resources :wigs, only: [:index, :show] do
-    resources :acquisitions, only: [:new, :create]
+    resources :acquisitions, only: [:new, :create, :edit, :update]
     member do
       get  :recap
     end

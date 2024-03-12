@@ -14,18 +14,15 @@ class Acquisition < ApplicationRecord
   # validates :date_time, absence: true, if: :delivery?
 
   validates :delivery_name, :delivery_address, :delivery_city, :delivery_zipcode, presence: true, if: :delivery?
-  validates :date_time, presence: true, if: :not_delivery?
+  validates :date_time, presence: true, unless: :delivery?
   validates :medical_reasons, acceptance: { message: "Vous devez attester sur l'honneur que vous avez besoin d'une perruque pour des raisons médicales." }
   # validates :user_can_have_only_one_acquisition, on: :create
 
   private
 
-  def not_delivery?
-    delivery == false
-  end
 
   def delivery?
-    delivery == true
+    delivery
   end
 
   def user_can_have_only_one_acquisition

@@ -6,14 +6,35 @@ class AcquisitionsController < ApplicationController
   end
 
   def create
+    # Check if the current user already has an acquisition
+    if current_user.acquisitions.exists?
+      flash[:alert] = "Vous avez déjà réservé une perruque."
+      redirect_to wigs_path
+      return
+    end
+
     @acquisition = Acquisition.new(acquisition_params)
     @acquisition.user = current_user
     @acquisition.wig = @wig
     if @acquisition.save
-      flash[:notice] = "Wig reserved successfully."
+      flash[:notice] = "Votre perruque a bien été réservée !"
       redirect_to wigs_path
     else
-      render:new
+      render :new
+    end
+  end
+
+  def edit
+    @acquisition = Acquisition.find(params[:id])
+  end
+
+  def update
+    @acquisition = Acquisition.find(params[:id])
+
+    if @acquisition.update(acquisition_params)
+      redirect_to new_wig_acquisition_path(@acquisition.wig)
+    else
+      render :edit
     end
   end
 
@@ -24,6 +45,6 @@ class AcquisitionsController < ApplicationController
   end
 
   def acquisition_params
-    params.require(:acquisition).permit(:delivery_name, :delivery_address, :delivery_zipcode, :city, :date_time, :medical_reasons)
+    params.require(:acquisition).permit(:delivery_name, :delivery_address, :delivery_zipcode, :delivery_city, :date_time, :medical_reasons, :delivery)
   end
 end
