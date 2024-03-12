@@ -47,8 +47,17 @@
   color: $black;
 }
 
-.address-recap-container {
-  margin-top: 1rem;
+// .address-recap-container,
+// .datetime-recap-container {
+//   margin-top: 1rem;
+// }
+
+.datetime-recap-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 .confirmation-message {
@@ -58,6 +67,10 @@
 .confirmation-message p {
   padding-bottom: 1rem;
   text-align: justify;
+}
+
+.datetime {
+  padding-top: 1rem;
 }
 
 .homepage-btn-reservation a {

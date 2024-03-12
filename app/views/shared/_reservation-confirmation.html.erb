@@ -17,17 +17,22 @@
                     <%= Acquisition.last.delivery_city %>
                   </span>
                 </p>
-              </div>
+            </div>
+            <% else %>
+            <div class="datetime-recap-container">
+                <p>Vous pourrez récupérer votre perruque à la date et à l'heure suivantes :</p>
+                <p class="datetime"><%= Acquisition.last.date_time %></p>
+            </div>
           <% end %>
     </div>
 
-      <div class="confirmation-message">
+    <div class="confirmation-message">
         <p>Vous recevrez également un récapitulatif de votre commande par email.</p>
-      </div>
+    </div>
 
-      <div class="homepage-btn-reservation">
+    <div class="homepage-btn-reservation">
         <%= link_to "Homepage", home_path %>
-      </div>
+    </div>
   </section>
 
 </main>
