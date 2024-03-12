@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get '/about', to: 'pages#about_us'
+  get '/faq', to: 'pages#faq'
 
   resources :donations, only: [:new, :create]
   resources :wigs, only: [:index, :show] do

@@ -1,0 +1,58 @@
+// .accordion {
+//   --bs-accordion-bg: $black;
+//   --bs
+// }
+
+.faq-container {
+  width: 100%;
+  min-height: 110vh;
+  margin: 2rem 0;
+}
+.questions {
+  h2 {
+    font-family: Zilla Slab;
+    font-size: 19px;
+    color: $dark-green;
+    text-align: center;
+  }
+  p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: $black;
+  }
+}
+
+.accordion-body {
+  background-color: $white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  padding: 12px;
+  p {
+    text-align: justify;
+  }
+}
+
+h2 {
+  font-family: Zilla Slab;
+  text-align: left;
+}
+
+button.accordion-button:not(.collapsed) {
+  background-color: #da8197;
+  color: $white;
+}
+
+.accordion-button {
+  background-color: $dark-green;
+}
+
+button.accordion-button.collapsed {
+  background-color: #ffc2d1;
+  color: $white;
+}
+
+.accordion-button::after {
+  color: white;
+}
