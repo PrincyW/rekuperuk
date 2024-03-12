@@ -1,6 +1,9 @@
 .about-us {
-  width: 100%;
   padding-bottom: 3rem;
+}
+
+.about-us section {
+  margin: 0 1rem;
 }
 
 .section-header {
@@ -67,7 +70,6 @@
   width: 100%;
   position: relative;
   display: inline-block;
-  margin: 1rem 0.5rem;
 }
 
 .overlay {
@@ -90,7 +92,7 @@ section:last-child {
 section:last-child h2 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   font-family: 'Zilla Slab';
   color: $dark-pink;
