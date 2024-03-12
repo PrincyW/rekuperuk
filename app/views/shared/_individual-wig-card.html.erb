@@ -1,7 +1,7 @@
-<div class="card d-flex " id="individual-wig-card">
+<div class="card " id="individual-wig-card">
 
     <%# Adding Carousel %>
-    <div id="carouselExampleDark" class="carousel carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleDark" class="carousel carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -9,19 +9,19 @@
         </div>
         <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-        <div class="carousel-item-container">
+        <div class="carousel-item-container-show">
               <%= image_tag  @wig.photo1, alt:"photo of wig", class: "index-img d-block" %>
         </div>
 
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-            <div class="carousel-item-container">
+            <div class="carousel-item-container-show">
                 <%= image_tag  @wig.photo2, alt:"photo of wig", class: "index-img d-block" %>
             </div>
         </div>
 
         <div class="carousel-item">
-            <div class="carousel-item-container">
+            <div class="carousel-item-container-show">
                  <%= image_tag  @wig.photo3, alt:"photo of wig", class: "index-img d-block" %>
             </div>
           </div>
@@ -31,7 +31,7 @@
 
     <%# End of Carousel %>
 
-       <div class="card-body d-flex" id="individual-wig-info">
+    <div class="card-body-show d-flex justify-content-around" id="individual-wig-info">
       <div>
           <h6 class="card-title">Color: <span><%= @wig.color.name %></span></h6>
           <h6 class="card-title">Size: <span><%= @wig.size.name %></span></h6>

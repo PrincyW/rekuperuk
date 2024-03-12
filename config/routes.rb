@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   get '/home', to: 'pages#home'
   get '/about', to: 'pages#about_us'
+  get '/faq', to: 'pages#faq'
 
   resources :donations, only: [:new, :create] do
       member do
