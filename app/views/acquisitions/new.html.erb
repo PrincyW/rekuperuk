@@ -16,9 +16,12 @@
       <% end %>
 
     <% else %>
-        <h2>Vos disponibilités pour un retrait</h2>
+        <h4 class="on-site-delivery-heading">Vos disponibilités pour un retrait</h4>
+        <div class="on-site-delivery">
+            <p class="opening-hours">L'association Rekuperuk est ouverte du lundi au samedi de 10h à 17h.</p>
+            <p><br>Retrouvez-nous au <strong>2 avenue des Saules, 59160 Lille</strong><br> Metro 2 - Canteleu, &nbsp; <i class="fa-solid fa-person-walking"></i>  8 min</p>
+        </div>
 
-        <p>L'association Rekuperuk est ouverte du lundi au samedi de 10h à 17h.<br>Retrouvez-nous au <strong>2 avenue des Saules, 59160 Lille</strong><br> Metro 2 - Canteleu,  <i class="fa-solid fa-person-walking"></i> 8 min</p>
 
         <%= simple_form_for [@wig, @acquisition], url: wig_acquisitions_path(@wig) do |f| %>
           <%= f.input :date_time,
@@ -26,7 +29,9 @@
                     input_html: { data: { controller: "flatpickr", flatpickr_target:"slot" } } %>
           <%= f.input :medical_reasons, as: :boolean, label: "Je certifie sur l'honneur avoir besoin d'une perruque pour des raisons médicales", required: true %>
           <%= f.input :delivery, as: :boolean, checked_value: false, unchecked_value: false, value: false,  input_html: {class: "d-none checkbox", checked: false}, label: false %>
-          <%= f.button :submit, "Soumettre", data: { confirm: "Notez que vous ne pouvez acquérir qu'une perruque. Confirmez-vous votre demande ?" } %>
+          <div class="submit-btn-reservation">
+            <%= f.button :submit, "Soumettre", data: { confirm: "Notez que vous ne pouvez acquérir qu'une perruque. Confirmez-vous votre demande ?" }, class: "submit-reservation" %>
+          </div>
         <% end %>
     <% end %>
 </main>

@@ -1,3 +1,5 @@
+// Styling for on site delivery and delivery by post office forms. Some common styles are applicable for both.
+
 .delivery-form {
   width: 100%;
   min-height: calc(100vh - 11vh);
@@ -54,4 +56,38 @@
   outline: none;
   border: none;
   border-radius: 0.6rem;
+}
+
+// Additional styles only for on site delivery form
+
+.on-site-delivery-heading {
+  padding-top: 1rem;
+}
+
+.on-site-delivery {
+  padding: 0 2rem;
+}
+
+.on-site-delivery .opening-hours {
+  margin-top: 2rem;
+}
+
+.on-site-delivery p {
+  margin: 0;
+}
+
+.on-site-delivery p strong {
+  color: $dark-pink;
+}
+
+.on-site-delivery p i {
+  color: $dark-pink;
+}
+
+.acquisition_date_time label {
+  font-family: 'Zilla Slab';
+}
+
+.flatpickr-input::placeholder {
+  font-family: 'Zilla Slab';
 }
