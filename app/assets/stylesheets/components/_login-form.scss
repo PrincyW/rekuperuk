@@ -1,3 +1,5 @@
+// Login form CSS - Some common styles with Signup form
+
 .login-form {
   width: 100%;
   min-height: 100vh;
@@ -54,5 +56,17 @@ fieldset.user_remember_me {
 .login-form a {
   text-decoration: none;
   color: $dark-pink;
+  font-family: 'Zilla Slab';
+}
+
+// Sign up form CSS
+
+.user_username input,
+.user_avatar_url input,
+#user_password_confirmation {
+  width: 110%;
+}
+
+.user_password_confirmation label {
   font-family: 'Zilla Slab';
 }
