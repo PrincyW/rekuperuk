@@ -1,5 +1,5 @@
 .individual-wig-container {
-  margin-top: 5rem;
+  // margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +31,10 @@
 
 #previous-btn {
   color: $white;
+  position: absolute;
+  margin-top: 13rem;
+  top: 6.5rem;
+  left: 0.8rem;
 }
 
 .delivery-options {
@@ -93,4 +97,12 @@
 .section-icon-container img {
   width: 6rem;
   border-radius: 50%;
+}
+
+.back-link {
+  text-decoration: none;
+  font-family: 'Zilla Slab';
+  padding-bottom: 1rem;
+  color: $dark-pink;
+  font-weight: 500;
 }

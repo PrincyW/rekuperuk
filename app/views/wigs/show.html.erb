@@ -1,18 +1,10 @@
 <main class= "individual-wig-container show-main">
 
-
- <div id="prev-btn-container">
-      <button class="dark-green-back-btn" id="prev-btn">
-      <%= link_to wigs_path do %>
-          <i class="fa-solid fa-arrow-left"></i>
-        <% end %>
-      </button>
-  </div>
-
-
     <%= render "shared/individual-wig-card" %>
 
-    <button class="dark-pink-btn show">
-        <%= link_to "Rekup this wig", recap_wig_path(@wig) %>
-    </button>
+  <button class="dark-pink-btn show">
+      <%= link_to "Rekup this wig", recap_wig_path(@wig) %>
+  </button>
+
+   <%= link_to "Retour", wigs_path, class: "back-link"  %>
 </main>
