@@ -1,8 +1,6 @@
 <main class="individual-wig-recap">
 
-
-
-  <div class="container d-flex flex-column align-items-center">
+  <div class="container d-flex flex-column align-items-center order-recap-container">
 
     <div class="d-flex align-items-center mb-4 mt-4">
         <%= link_to wig_path(@wig) do %>
@@ -39,7 +37,7 @@
         <%= link_to new_wig_acquisition_path(@wig, delivery: false), class: "delivery-on-site-img" do %>
           <div class="on-site">
             <%= image_tag "Colis-live.png", alt: "hand to hand image" %>
-          <p>Je récupère ma perruque sur place</p>
+          <p>Récupération sur place</p>
           </div>
         <% end %>
   </div>
