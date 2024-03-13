@@ -1,73 +1,22 @@
 .individual-wig-container {
-  margin-top: 5rem;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.carousel-item-container-show {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  background-color: $white;
-}
-
-.carousel-item-container-show img {
-  width: 20rem;
-  height: 12rem;
-  object-fit: cover;
-  border-radius: 0.8rem;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-}
-
-.card-body-show {
-  padding: 8px;
-  background-color: $white;
-  border-radius: 0 0 0.8rem 0.8rem;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-}
-
-#previous-btn {
-  color: $white;
-}
-
-.delivery-options {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-around;
-}
-
-.post-office {
-  margin-right: 2rem;
-}
-
-.post-office-img,
-.delivery-on-site-img {
-  background-color: $white;
-  padding: 0.5rem;
-  border: none;
-  outline: none;
-  border-radius: 0.8rem;
-}
-
-.post-office-img img,
-.delivery-on-site-img img {
-  width: 5rem;
 }
 
 // CSS Styles for section inviting user to visit FAQ & Tutorials page for tips on wig care and hairstyles
 
 .faq-tutorials-link-section {
-  margin: 1rem;
+  margin: 0 1rem 0 1rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 0.9rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.3rem 1.5rem;
 }
 
 .section-text-container {
@@ -93,4 +42,13 @@
 .section-icon-container img {
   width: 6rem;
   border-radius: 50%;
+}
+
+.back-link {
+  margin-top: 0.5rem;
+  text-decoration: none;
+  font-family: 'Zilla Slab';
+  padding-bottom: 1rem;
+  color: $dark-pink;
+  font-weight: 500;
 }

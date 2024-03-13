@@ -1,45 +1,75 @@
-<div class="card " id="individual-wig-card">
+<section id="individual-wig-card-in-show">
 
-    <%# Adding Carousel %>
-  <div id="carouselExampleDark" class="carousel carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-        <div class="carousel-item-container-show">
-              <%= image_tag  @wig.photo1, alt:"photo of wig", class: "index-img d-block" %>
-        </div>
+  <%# Adding Carousel %>
+    <div id="carouselExampleDark" class="carousel carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item-container-show">
+                <%= image_tag  @wig.photo1, alt:"photo of wig", class: "index-img d-block" %>
+          </div>
 
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-            <div class="carousel-item-container-show">
-                <%= image_tag  @wig.photo2, alt:"photo of wig", class: "index-img d-block" %>
-            </div>
-        </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item-container-show">
+                  <%= image_tag  @wig.photo2, alt:"photo of wig", class: "index-img d-block" %>
+              </div>
+          </div>
 
-        <div class="carousel-item">
-            <div class="carousel-item-container-show">
-                 <%= image_tag  @wig.photo3, alt:"photo of wig", class: "index-img d-block" %>
+          <div class="carousel-item">
+              <div class="carousel-item-container-show">
+                  <%= image_tag  @wig.photo3, alt:"photo of wig", class: "index-img d-block" %>
+              </div>
             </div>
           </div>
-        </div>
-
-  </div>
+    </div>
 
     <%# End of Carousel %>
 
     <div class="card-body-show d-flex justify-content-around" id="individual-wig-info">
-      <div>
-          <h6 class="card-title">Color: <span><%= @wig.color.name %></span></h6>
-          <h6 class="card-title">Size: <span><%= @wig.size.name %></span></h6>
-      </div>
+        <div class="info-container-top">
+            <div>
+              <h6 class="card-title">
+                  <span>
+                    <i class="fa-solid fa-circle <%= @wig.color.name.downcase %>" ></i>
+                  </span> &nbsp;
+                  <span class="color-index">
+                    <%= @wig.color.name %>
+                  </span>
+              </h6>
+            </div>
+            <div>
+                <h6 class="card-title">
+                    <%= image_tag @wig.size.icon, class: "size-icon"%> &nbsp;
+                    <span class="size-index">
+                        <%= @wig.size.name %>
+                    </span>
+                </h6>
+            </div>
+        </div>
 
-      <div>
-          <h6 class="card-title">Type: <span><%= @wig.texture.name %></span></h6>
-          <h6 class="card-title">Length: <span><%= @wig.length.name %></span></h6>
-      </div>
+        <div class="info-container-bottom">
+          <div>
+              <h6 class="card-title">
+                <%= image_tag @wig.texture.icon, class: "size-icon" %> &nbsp;
+                  <span class="texture-index">
+                    <%= @wig.texture.name %>
+                  </span>
+              </h6>
+          </div>
+            <div>
+                <h6 class="card-title">
+                <%= image_tag @wig.length.icon,  class: "size-icon" %> &nbsp;
+                <span class="length-index">
+                  <%= @wig.length.name %>
+                </span>
+              </h6>
+            </div>
+
+        </div>
     </div>
-</div>
+</section>
