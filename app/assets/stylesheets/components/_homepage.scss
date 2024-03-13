@@ -11,9 +11,8 @@ p {
 }
 
 h5 {
-  color: #616e5a;
-  // font-size: 20px;
-  font-family: zilla slab;
+  color: $dark-pink;
+  font-family: 'Zilla Slab';
   text-align: center;
 }
 
@@ -26,22 +25,24 @@ body {
   background-color: $beige;
 }
 
-.carousel-inner {
+.carousel-inner-container {
   background-color: $white;
+  border-radius: 8px;
 }
 
-.carousel-item {
+.single-carousel-item {
   background-color: $white;
-  height: 200px;
+  height: 250px;
 }
 
-.carousel-item-container {
+.carousel-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   background-color: $white;
 }
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -54,4 +55,8 @@ body {
   align-items: justify;
   padding: 16px;
   margin-top: 16px;
+}
+
+.textblock .strong-pink {
+  color: $dark-pink;
 }

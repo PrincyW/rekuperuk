@@ -2,117 +2,56 @@
 
 <%# Color dropdown %>
 <div class="dropdown-filter">
-    <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Couleur
-    </button>
-    <ul class="dropdown-menu" id="filter-dropdown">
-      <li><button class="dropdown-item" type="button">Noir</button></li>
-      <li><button class="dropdown-item" type="button">Blond</button></li>
-      <li><button class="dropdown-item" type="button">Brun</button></li>
-      <li><button class="dropdown-item" type="button">Gris</button></li>
-      <li><button class="dropdown-item" type="button">Rouge</button></li>
-    </ul>
+
+  <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Couleur
+  </button>
+  <ul class="dropdown-menu" id="filter-dropdown">
+    <li><%= link_to wigs_path(color: 'Black', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Brun<% end %></li>
+    <li><%= link_to wigs_path(color: 'Blonde', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Blonde<% end %></li>
+    <li><%= link_to wigs_path(color: 'Brown', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Châtain<% end %></li>
+    <li><%= link_to wigs_path(color: 'Grey', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Sel et poivre<% end %></li>
+    <li><%= link_to wigs_path(color: 'Red', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Roux<% end %></li>
+  </ul>
 </div>
 
 <%# Size dropdown %>
 
 <div class="dropdown-filter">
-    <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Taille
-    </button>
-    <ul class="dropdown-menu" id="filter-dropdown">
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">S</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">M</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">L</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-    </ul>
+  <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Taille
+  </button>
+  <ul class="dropdown-menu" id="filter-dropdown">
+    <li><%= link_to wigs_path(color: params[:color], size: 'Small', texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>S<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: 'Medium', texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>M<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: 'Large', texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>L<% end %></li>
+  </ul>
 </div>
 
 <%# dropdown for type %>
 
 <div class="dropdown-filter">
-    <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Type
-    </button>
-    <ul class="dropdown-menu" id="filter-dropdown">
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Straight</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Curly</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Frizzy</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-    </ul>
+  <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Texture
+  </button>
+  <ul class="dropdown-menu" id="filter-dropdown">
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: 'Smooth', length: params[:length]), class: "dropdown-item" do %>Lisse<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: 'Curly', length: params[:length]), class: "dropdown-item" do %>Bouclé<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: 'Frizzy', length: params[:length]), class: "dropdown-item" do %>Crépu<% end %></li>
+  </ul>
 </div>
 
 <%# dropdown for length %>
 
 
 <div class="dropdown-filter">
-    <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Longueur
-    </button>
-    <ul class="dropdown-menu" id="filter-dropdown">
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Court</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Medium</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-      <li>
-        <div class="checkbox">
-          <label for="myCheckbox">Long</label>
-        </div>
-        <div class="label">
-          <input type="checkbox" id="myCheckbox" name="myCheckbox">
-        </div>
-      </li>
-    </ul>
+  <button class="dark-green-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Coupe
+  </button>
+  <ul class="dropdown-menu" id="filter-dropdown">
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Short'), class: "dropdown-item" do %>Court<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Bob'), class: "dropdown-item" do %>Carré<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Mid-length'), class: "dropdown-item" do %>Mi-long<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Long'), class: "dropdown-item" do %>Long<% end %></li>
+  </ul>
 </div>

@@ -7,4 +7,9 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :avatar_url])
   end
+
+  def current_url(overwrite = {})
+    url_for :only_path => false, :params => params.merge(overwrite)
+  end
+
 end
