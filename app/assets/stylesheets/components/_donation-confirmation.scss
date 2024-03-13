@@ -10,7 +10,7 @@
 
 .donation-confirmation section {
   width: 19rem;
-  height: 30rem;
+  height: 30.5rem;
   background-color: $white;
   border-radius: 0.5rem;
   display: flex;
@@ -41,7 +41,7 @@
   padding: 1rem;
 }
 
-.thank-you-msg p {
+.thank-you-msg p:not(:last-child) {
   padding-bottom: 1rem;
   text-align: justify;
 }
