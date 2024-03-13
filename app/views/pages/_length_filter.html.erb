@@ -1,0 +1,32 @@
+<form>
+  <h1>Choisissez une coupe</h1>
+  <div class="criteria" onclick="toggleCheckbox('length-short')">
+    <input type="checkbox" id="length-short" name="length" value="Short">
+    <label for="length-short">Court</label>
+  </div>
+  <div class="criteria" onclick="toggleCheckbox('length-bob')">
+    <input type="checkbox" id="length-bob" name="length" value="Bob">
+    <label for="length-bob">Carré</label>
+  </div>
+  <div class="criteria" onclick="toggleCheckbox('length-mid')">
+    <input type="checkbox" id="length-mid" name="length" value="Mid-length">
+    <label for="length-mid">Mi-long</label>
+  </div>
+  <div class="criteria" onclick="toggleCheckbox('length-long')">
+    <input type="checkbox" id="length-long" name="length" value="Long">
+    <label for="length-long">Long</label>
+  </div>
+</form>
+
+<div class="previous">
+  <%# Button that directs to the precedent filter %>
+  <button class="dark-green-back-btn">
+    <i class="fa-solid fa-arrow-left"></i> <p>Précédent</p>
+  </button>
+</div>
+
+
+<%# Button that directs directly to the index %>
+<button class="dark-pink-btn">
+  <%= link_to "Aller à la galerie", wigs_path %>
+</button>

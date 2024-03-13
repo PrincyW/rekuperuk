@@ -1,0 +1,32 @@
+<form>
+  <h1>Choisissez une texture</h1>
+  <div class="criteria" onclick="toggleCheckbox('texture-smooth')">
+    <input type="checkbox" id="texture-smooth" name="texture" value="Smooth">
+    <label for="texture-smooth">Lisse</label>
+  </div>
+  <div class="criteria" onclick="toggleCheckbox('texture-curly')">
+    <input type="checkbox" id="texture-curly" name="texture" value="Curly">
+    <label for="texture-curly">Bouclé</label>
+  </div>
+  <div class="criteria" onclick="toggleCheckbox('texture-frizzy')">
+    <input type="checkbox" id="texture-frizzy" name="texture" value="Frizzy">
+    <label for="texture-frizzy">Crépu</label>
+  </div>
+</form>
+
+<div class="next-previous">
+  <%# Button that directs to the precedent filter %>
+  <button class="dark-green-back-btn">
+    <i class="fa-solid fa-arrow-left"></i> <p>Précédent</p>
+  </button>
+
+  <%# Button that directs to the next filter if we don't want to filter %>
+  <button class="dark-green-back-btn">
+    <i class="fa-solid fa-arrow-right"></i> <p>Suivant</p>
+  </button>
+</div>
+
+<%# Button that directs directly to the index %>
+<button class="dark-pink-btn">
+  <%= link_to "Aller à la galerie", wigs_path %>
+</button>

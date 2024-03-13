@@ -13,13 +13,15 @@
   </head>
 
   <body>
-     <% if current_page?(root_path)%>
-        <%= yield %>
-      <% else %>
-          <%= render "shared/navbar" %>
-          <%= render "shared/flashes" %>
-            <%= yield %>
-          <%= render "shared/footer" %>
-     <% end %>
+    <% if current_page?(root_path)%>
+      <%= yield %>
+    <% else %>
+      <%= render "shared/navbar" %>
+      <%= render "shared/flashes" %>
+      <%= yield %>
+      <% unless current_page?(filters_path) %>
+        <%= render "shared/footer" %>
+      <% end %>
+    <% end %>
   </body>
 </html>
