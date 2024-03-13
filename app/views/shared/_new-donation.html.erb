@@ -3,21 +3,21 @@
 <main class="form-donation">
 
   <div class="donation-header">
-      <h1 class="donation-heading">Donate A Wig</h1>
+      <h1 class="donation-heading">Donner Une Perruque</h1>
       <div class="donation-underline"></div>
   </div>
 
   <div class="container d-flex justify-content-center" data-controller="alert">
     <%= simple_form_for(@donation) do |f| %>
-      <%= f.input :donator_email %>
+      <%= f.input :donator_email, label: "Votre email" %>
       <%= f.input :description, as: :text %>
       <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-      <%= f.submit 'Confirm donation', class: "btn btn-success", id: "donation-submit-btn", style: "color: white;" %>
+      <%= f.submit 'Confirmer le don', class: "btn btn-success", id: "donation-submit-btn", style: "color: white;" %>
     <% end %>
   </div>
 
   <div class="link-container">
-     <%= link_to "Homepage", home_path %>
+     <%= link_to "Page d'Accueil", home_path %>
   </div>
 
 </main>
