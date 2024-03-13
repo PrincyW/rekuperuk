@@ -12,7 +12,6 @@ p {
 
 h5 {
   color: #616e5a;
-  // font-size: 20px;
   font-family: zilla slab;
   text-align: center;
 }
@@ -54,4 +53,8 @@ body {
   align-items: justify;
   padding: 16px;
   margin-top: 16px;
+}
+
+.textblock .strong-pink {
+  color: $dark-pink;
 }
