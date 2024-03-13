@@ -1,0 +1,35 @@
+<form>
+  <h1>Choisissez une couleur</h1>
+  <div class="criteria" onclick="toggleCheckbox('color-black')">
+    <input type="checkbox" id="color-black" name="color" value="Black">
+    <label for="color-black">Brun</label>
+  </div>
+  <div class="criteria" onclick="toggleCheckbox('color-blonde')">
+    <input type="checkbox" id="color-blonde" name="color" value="Blonde">
+    <label for="color-blonde">Blonde</label>
+  </div>
+  <div class="criteria" onclick="toggleCheckbox('color-brown')">
+    <input type="checkbox" id="color-brown" name="color" value="Brown">
+    <label for="color-brown">Châtain</label>
+  </div>
+  <div class="criteria" onclick="toggleCheckbox('color-grey')">
+    <input type="checkbox" id="color-grey" name="color" value="Grey">
+    <label for="color-grey">Sel et poivre</label>
+  </div>
+  <div class="criteria" onclick="toggleCheckbox('color-red')">
+    <input type="checkbox" id="color-red" name="color" value="Red">
+    <label for="color-red">Roux</label>
+  </div>
+</form>
+
+<div class="next">
+  <%# Button that directs to the next filter if we don't want to filter %>
+  <button class="dark-green-back-btn">
+    <i class="fa-solid fa-arrow-right"></i> <p>Suivant</p>
+  </button>
+</div>
+
+<%# Button that directs directly to the index %>
+<button class="dark-pink-btn">
+  <%= link_to "Aller à la galerie", wigs_path %>
+</button>
