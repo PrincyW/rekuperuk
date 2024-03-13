@@ -36,7 +36,7 @@
               <h6 class="card-title">
                   <span>
                     <i class="fa-solid fa-circle <%= @wig.color.name.downcase %>" ></i>
-                  </span> &nbsp;
+                  </span> &nbsp;&nbsp;
                   <span class="color-index">
                     <%= @wig.color.name %>
                   </span>
@@ -44,7 +44,7 @@
             </div>
             <div>
                 <h6 class="card-title">
-                    <%= image_tag @wig.size.icon, class: "size-icon"%> &nbsp;
+                    <%= image_tag @wig.size.icon, class: "size-icon"%> &nbsp;&nbsp;
                     <span class="size-index">
                         <%= @wig.size.name %>
                     </span>
@@ -55,7 +55,7 @@
         <div class="info-container-bottom">
           <div>
               <h6 class="card-title">
-                <%= image_tag @wig.texture.icon, class: "size-icon" %> &nbsp;
+                <%= image_tag @wig.texture.icon, class: "size-icon texture" %> &nbsp;&nbsp;
                   <span class="texture-index">
                     <%= @wig.texture.name %>
                   </span>
@@ -63,7 +63,7 @@
           </div>
             <div>
                 <h6 class="card-title">
-                <%= image_tag @wig.length.icon,  class: "size-icon" %> &nbsp;
+                <%= image_tag @wig.length.icon,  class: "size-icon length" %> &nbsp;&nbsp;
                 <span class="length-index">
                   <%= @wig.length.name %>
                 </span>
