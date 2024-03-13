@@ -1,8 +1,20 @@
 #individual-wig-card-in-show {
   background-color: $white;
   width: 100%;
-  height: 23rem;
+  height: 100%;
+  // margin-top: 1rem;
   margin-bottom: 0.3rem;
+}
+
+.carousel-item-container-show {
+  width: 100%;
+}
+
+.carousel-item-container-show img {
+  width: 100%;
+  object-fit: contain;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 #individual-wig-info {
@@ -37,91 +49,3 @@
 .info-container-bottom div {
   padding-bottom: 1rem;
 }
-
-
-
-// #individual-wig-card {
-//   width: 20rem;
-//   height: 21rem;
-//   background-color: $white;
-//   border-radius: 0.5rem;
-//   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-//   margin-top: 1rem;
-// }
-
-// #individual-wig-card img {
-//   border-top-left-radius: 0.5rem;
-//   border-top-right-radius: 0.5rem;
-// }
-
-// .carousel-inner {
-//   border-radius: 0.5rem;
-// }
-
-// .carousel-item-container-show {
-//   border-radius: 0.5rem;
-// }
-
-// .img-container-show {
-//   margin-top: 1.1rem;
-//   padding: 0.2rem 0;
-// }
-
-
-
-// .carousel-item-container-show img {
-//   width: 500px;
-//   // height: 14rem;
-//   // object-fit: cover;
-//   // border-radius: 0.8rem;
-// }
-
-// #individual-wig-info h6 {
-//   text-align: left;
-//   font-family: "Zilla Slab";
-//   font-weight: 600;
-//   font-size: 1rem;
-// }
-
-// #individual-wig-info h6 span {
-//   font-weight: 400;
-//   font-size: 0.9rem;
-// }
-
-// .carousel-inner {
-//   height: 300px;
-//   border-radius: 0.8rem;
-// }
-
-// .carousel-item-container-show img {
-//   height: 100% !important;
-//   width: 18rem !important;
-// }
-
-// .btn-container {
-//   margin: 0;
-//   background: $dark-green;
-//   color: white;
-//   padding: 0.6rem 1.5rem;
-//   border-radius: 10px;
-//   position: relative;
-//   top: -16px;
-//   left: -126px;
-// }
-
-// .fa-solid fa-arrow-left {
-//   color: white;
-// }
-
-// .dark-pink-btn.show {
-//   margin-top: 5.5rem;
-//   margin-bottom: 0.5rem;
-// }
-
-// .individual-wig-container.show-main {
-//   margin-top: 2rem !important;
-// }
-
-// #individual-wig-info {
-//   margin-bottom: 4rem;
-// }

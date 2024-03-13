@@ -25,22 +25,24 @@ body {
   background-color: $beige;
 }
 
-.carousel-inner {
+.carousel-inner-container {
   background-color: $white;
+  border-radius: 8px;
 }
 
-.carousel-item {
+.single-carousel-item {
   background-color: $white;
-  height: 200px;
+  height: 250px;
 }
 
-.carousel-item-container {
+.carousel-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   background-color: $white;
 }
+
 .buttons {
   display: flex;
   flex-direction: column;
