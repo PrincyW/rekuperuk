@@ -5,13 +5,13 @@ class AcquisitionsController < ApplicationController
     @acquisition = Acquisition.new
   end
 
-  # def create
-  #   # Check if the current user already has an acquisition
-  #   if current_user.acquisitions.exists?
-  #     flash[:alert] = "Vous avez déjà réservé une perruque."
-  #     redirect_to wigs_path
-  #     return
-  #   end
+  def create
+    # Check if the current user already has an acquisition
+    if current_user.acquisitions.exists?
+      flash[:alert] = "Vous avez déjà réservé une perruque."
+      redirect_to wigs_path
+      return
+    end
 
     @acquisition = Acquisition.new(acquisition_params)
     @acquisition.user = current_user
