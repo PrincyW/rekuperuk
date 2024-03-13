@@ -26,9 +26,9 @@ red = Color.create!(name: "Red", hexa: "#890B10")
 grey = Color.create!(name: "Grey", hexa: "#95939E")
 
 puts "Creation of textures..."
-smooth = Texture.create!(name: "Smooth", icon: File.open("app/assets/images/smooth.png"))
-curly = Texture.create!(name: "Curly", icon: File.open("app/assets/images/curly.png"))
-frizzy = Texture.create!(name: "Frizzy", icon: File.open("app/assets/images/Wig 1 - front.jpg"))
+smooth = Texture.create!(name: "Smooth", icon: "smooth.png")
+curly = Texture.create!(name: "Curly", icon: "curly.png")
+frizzy = Texture.create!(name: "Frizzy", icon: "frizzy.jpg")
 
 puts "Creation of sizes..."
 small = Size.create!(name: "Small", icon: "small.png")
