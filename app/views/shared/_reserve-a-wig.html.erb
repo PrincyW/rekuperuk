@@ -1,40 +1,47 @@
 <main class="individual-wig-recap">
-  <div id="prev-btn-container">
-      <button class="dark-green-back-btn" id="prev-btn">
+
+
+
+  <div class="container d-flex flex-column align-items-center">
+
+    <div class="d-flex align-items-center mb-4 mt-4">
         <%= link_to wig_path(@wig) do %>
-          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-left back"></i>
         <% end %>
-      </button>
+        <h2>Récapitulatif de ma commande</h2>
+    </div>
+
+    <div class="h3-text">
+          <h3><strong>Je souhaite récevoir la perruque ci-dessous</strong> </h3>
+    </div>
+
+    <%= render "shared/order-recap-card" %>
   </div>
 
-<div class="container d-flex flex-column align-items-center">
-<h3>Récapitulatif de ma commande</h3>
-<p>Je souhaite récevoir la perruque ci-dessous</p>
+  <div class="container d-flex flex-column align-items-center delivery">
+      <div class="h3-text">
+         <h3><strong>Je choissis mon mode de livraison </strong></h3>
+      </div>
 
-  <%= render "shared/order-recap-card" %>
+    <div class="textblock-recap">
+        <p>Les membres de <strong>Rekuperuk</strong> sont à votre disposition du lundi au vendredi de 9h00 à 16h00. Nous prenons tout notre temps pour vous conseiller au mieux par rapport à votre besoin. Un envoi par la poste est également possible.</p>
+    </div>
+  </div>
 
-</div>
-
-<div class="container d-flex flex-column align-items-center">
-<div class="card" id="order-recap">
-  <div class="delivery-options">
-
-    <div class="post-office">
+  <div class="container delivery-options">
       <%= link_to new_wig_acquisition_path(@wig, delivery: true), class: "post-office-img" do %>
-        <%= image_tag "paper-plane.png", alt: "paper plane image" %>
-        <p>je souhaite recevoir ma perruque par voie postale</p>
+        <div class="post-office">
+            <%= image_tag "Colis.png", alt: "paper plane image" %>
+            <p>Envoi par voie postale</p>
+        </div>
       <% end %>
-    </div>
-  </div>
-</div>
-</div>
 
-<div class="card" id="order-recap">
-    <div class="on-site">
-      <%= link_to new_wig_acquisition_path(@wig, delivery: false), class: "delivery-on-site-img" do %>
-        <%= image_tag "giving.png", alt: "hand to hand image" %>
-      <p>je souhaite prendre RDV pour récuperer ma perruque sur place</p>
-      <% end %>
-    </div>
+        <%= link_to new_wig_acquisition_path(@wig, delivery: false), class: "delivery-on-site-img" do %>
+          <div class="on-site">
+            <%= image_tag "Colis-live.png", alt: "hand to hand image" %>
+          <p>Je récupère ma perruque sur place</p>
+          </div>
+        <% end %>
   </div>
+
 </main>
