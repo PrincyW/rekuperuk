@@ -33,6 +33,10 @@
   color: $black;
 }
 
+.acquisition_medical_reasons label {
+  font-size: 1rem;
+}
+
 .form-check-label {
   font-size: 1rem;
   font-weight: 300;
@@ -61,6 +65,12 @@
 // Additional styles only for on site delivery form
 
 .on-site-delivery-heading {
+  font-family: 'Zilla Slab';
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.on-site-delivery-heading {
   padding-top: 1rem;
 }
 
@@ -74,6 +84,7 @@
 
 .on-site-delivery p {
   margin: 0;
+  text-align: center;
 }
 
 .on-site-delivery p strong {
