@@ -2,12 +2,14 @@
   background-color: $dark-green;
   border-radius: 5px;
   margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 0.15rem;
 }
 
 .dropdown-filter button {
   color: $white;
   font-family: "Zilla Slab";
-  padding: 0.8rem 1rem;
+  padding: 0.6rem 0.8rem;
   width: 20%;
 }
 
