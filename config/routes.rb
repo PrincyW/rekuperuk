@@ -24,4 +24,10 @@ Rails.application.routes.draw do
       get  :recap
     end
   end
+
+  resources :acquisitions, only: [] do
+    member do
+      get  :confirmation
+    end
+  end
 end

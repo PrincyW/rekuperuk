@@ -1,16 +1,12 @@
-// .accordion {
-//   --bs-accordion-bg: $black;
-//   --bs
-// }
-
 .faq-container {
   width: 100%;
   min-height: 110vh;
   margin: 2rem 0;
 }
 .questions {
+
   h2 {
-    font-family: Zilla Slab;
+    font-family: 'Zilla Slab';
     font-size: 19px;
     color: $dark-green;
     text-align: center;
@@ -21,6 +17,7 @@
     font-size: 14px;
     text-align: center;
     color: $black;
+    padding: 0.5rem;
   }
 }
 
@@ -35,12 +32,12 @@
 }
 
 h2 {
-  font-family: Zilla Slab;
+  font-family: 'Zilla Slab';
   text-align: left;
 }
 
 button.accordion-button:not(.collapsed) {
-  background-color: #da8197;
+  background-color: #b1d0a9;
   color: $white;
 }
 
@@ -49,10 +46,10 @@ button.accordion-button:not(.collapsed) {
 }
 
 button.accordion-button.collapsed {
-  background-color: #ffc2d1;
+  background-color: #616e5a;
   color: $white;
 }
 
-.accordion-button::after {
-  color: white;
+button.accordion-button.collapsed::after {
+  color: $white;
 }

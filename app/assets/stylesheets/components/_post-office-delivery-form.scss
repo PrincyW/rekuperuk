@@ -1,0 +1,93 @@
+// Styling for on site delivery and delivery by post office forms. Some common styles are applicable for both.
+
+.delivery-form {
+  width: 100%;
+  min-height: calc(100vh - 11vh);
+}
+
+.delivery-form h4 {
+  text-align: center;
+  font-family: 'Zilla Slab';
+  margin-top: 2rem;
+  color: $dark-pink;
+  font-weight: 700;
+}
+
+#new_acquisition {
+  margin-top: 1rem;
+  padding: 0 3rem;
+}
+
+.acquisition_delivery_name input,
+.acquisition_delivery_address input,
+.acquisition_delivery_zipcode input,
+.acquisition_delivery_city select {
+  border-radius: 0.5rem;
+}
+
+.acquisition_delivery_name label,
+.acquisition_delivery_address label,
+.acquisition_delivery_zipcode label,
+.acquisition_delivery_city label {
+  font-family: 'Zilla Slab';
+  color: $black;
+}
+
+.form-check-label {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.submit-btn-reservation {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  transform: translateY(-50%);
+}
+
+.submit-reservation {
+  color: $white;
+  font-family: 'Zilla Slab';
+  font-weight: 500;
+  width: 50%;
+  background-color: $dark-pink;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.6rem;
+}
+
+// Additional styles only for on site delivery form
+
+.on-site-delivery-heading {
+  padding-top: 1rem;
+}
+
+.on-site-delivery {
+  padding: 0 2rem;
+}
+
+.on-site-delivery .opening-hours {
+  margin-top: 2rem;
+}
+
+.on-site-delivery p {
+  margin: 0;
+}
+
+.on-site-delivery p strong {
+  color: $dark-pink;
+}
+
+.on-site-delivery p i {
+  color: $dark-pink;
+}
+
+.acquisition_date_time label {
+  font-family: 'Zilla Slab';
+}
+
+.flatpickr-input::placeholder {
+  font-family: 'Zilla Slab';
+}
