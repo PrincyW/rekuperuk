@@ -2,8 +2,10 @@
 
     <%= render "shared/individual-wig-card" %>
 
+    <%= render "shared/links-section-show" %>
+
   <button class="dark-pink-btn show">
-      <%= link_to "Rekup this wig", recap_wig_path(@wig) %>
+      <%= link_to "Rekup perruque", recap_wig_path(@wig) %>
   </button>
 
    <%= link_to "Retour", wigs_path, class: "back-link"  %>
