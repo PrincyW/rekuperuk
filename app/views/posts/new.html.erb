@@ -1,0 +1,24 @@
+<main class="form-submit-post">
+
+  <div class="post-header">
+      <h1 class="post-heading">Publier un post</h1>
+      <div class="post-underline"></div>
+  </div>
+
+  <div class="form-post-container" data-controller="alert">
+    <%= simple_form_for(@post) do |f| %>
+      <%= f.input :title, label: "Ajoutez votre titre" %>
+      <%= f.input :description, as: :text, label: "Ajoutez votre contenu"  %>
+      <%= f.input :photo, as: :file, label: "Ajoutez une photo"  %>
+      <div class="submit-post-link">
+        <%= f.submit 'Soumettre', class: "submit-post", id: "post-submit-btn", style: "color: white;" %>
+      </div>
+
+    <% end %>
+  </div>
+
+  <div class="link-container">
+     <%= link_to "Page d'Accueil", home_path %>
+  </div>
+
+</main>

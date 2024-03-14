@@ -9,14 +9,14 @@ Color.destroy_all
 Texture.destroy_all
 Size.destroy_all
 Length.destroy_all
-
 User.destroy_all
-
+Post.destroy_all
 puts "Creation of the users..."
+
 asso = User.create!(email: "asso@mail.com", password: "wigwig", username: "asso", avatar_url: "https://media.istockphoto.com/id/1131162788/fr/vectoriel/rubans-de-sensibilisation-au-cancer-du-sein.jpg?s=612x612&w=0&k=20&c=Fopoaui4Di-AJT4x9FQcv3xgYsXtylV6oF0srTUt9yg=", admin: true)
-User.create!(email: "els@mail.com", password: "wigwig", username: "els", avatar_url: "https://media.licdn.com/dms/image/C4E03AQEy2jt6Y_nijg/profile-displayphoto-shrink_800_800/0/1664207573519?e=2147483647&v=beta&t=3aPxmR9iooUWQiSfF_eTtDBP4QR5sg5GG-KEq689NmA")
-User.create!(email: "vasiliki@mail.com", password: "wigwig", username: "vasiliki", avatar_url: "https://media.licdn.com/dms/image/C5603AQFtIc1Ql1g1pQ/profile-displayphoto-shrink_200_200/0/1599645006945?e=2147483647&v=beta&t=dmqu_MWfP-jdTneJLrFXMxrBYWqB_oo04nBFYJ-rZR0")
-User.create!(email: "princy@mail.com", password: "wigwig", username: "princy", avatar_url: "https://media.licdn.com/dms/image/D4E03AQER3O8dl-DGIA/profile-displayphoto-shrink_800_800/0/1706011684644?e=2147483647&v=beta&t=192m5OmltKVvd_2_SHM0YynPn3bIIWe5-vxy7HcqVoY")
+els = User.create!(email: "els@mail.com", password: "wigwig", username: "els", avatar_url: "https://media.licdn.com/dms/image/C4E03AQEy2jt6Y_nijg/profile-displayphoto-shrink_800_800/0/1664207573519?e=2147483647&v=beta&t=3aPxmR9iooUWQiSfF_eTtDBP4QR5sg5GG-KEq689NmA")
+vasiliki = User.create!(email: "vasiliki@mail.com", password: "wigwig", username: "vasiliki", avatar_url: "https://media.licdn.com/dms/image/C5603AQFtIc1Ql1g1pQ/profile-displayphoto-shrink_200_200/0/1599645006945?e=2147483647&v=beta&t=dmqu_MWfP-jdTneJLrFXMxrBYWqB_oo04nBFYJ-rZR0")
+princy = User.create!(email: "princy@mail.com", password: "wigwig", username: "princy", avatar_url: "https://media.licdn.com/dms/image/D4E03AQER3O8dl-DGIA/profile-displayphoto-shrink_800_800/0/1706011684644?e=2147483647&v=beta&t=192m5OmltKVvd_2_SHM0YynPn3bIIWe5-vxy7HcqVoY")
 
 puts "Creation of colors..."
 black = Color.create!(name: "Black", hexa: "#000000")
@@ -171,4 +171,25 @@ Wig.create!(photo1: "25. face.jpg", photo2: "25. face.jpg", photo3: "25. face.jp
 Wig.create!(photo1: "26. face.jpg", photo2: "26. face.jpg", photo3: "26. face.jpg", user: asso, color: grey, texture: frizzy, size: large, length: bob)
 Wig.create!(photo1: "25. face.jpg", photo2: "25. face.jpg", photo3: "25. face.jpg", user: asso, color: grey, texture: frizzy, size: large, length: short)
 
+
+# Posts Creation
+puts "Creation of posts..."
+file = URI.open("https://images.unsplash.com/photo-1497634763913-2ea08bf9de5d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+post1 = Post.create(title: "Rekuperuk saved my life", description: "I recently discovered [Wig Service Website] while searching for a solution to my hair loss struggles, and I couldn't be happier with my experience. From the moment I landed on their website, I was impressed by the range of options available and the user-friendly interface.", user: els)
+post1.photo.attach(io: file, filename: "women-watching-sunset.jpg", content_type: "image/jpg")
+post1.save
+
+file = URI.open("https://images.unsplash.com/photo-1591035897819-f4bdf739f446?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+post2 = Post.create(title: "Battling hair loss is difficult", description: "
+Battling alopecia is a deeply challenging journey, often fraught with emotional, psychological, and physical hurdles. For those facing this condition, every day can feel like a battle against self-doubt, anxiety, and societal pressures.", user: princy)
+post2.photo.attach(io: file, filename: "women-in-flowers.jpg", content_type: "image/jpg")
+post2.save
+
+
+file = URI.open("https://images.unsplash.com/photo-1556159992-e189f8e50104?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+post3 = Post.create(title: "Donating my wig was a feeling of relief", description: "
+Donating a wig to someone in need is an incredibly rewarding experience that fills the heart with warmth and joy. It's a gesture of compassion and empathy, a tangible way to make a positive impact on someone's life during a challenging time.
+The act of donating a wig goes beyond simply giving away a physical item; it's about offering hope, confidence, and dignity to someone facing hair loss. For those grappling with conditions like alopecia, chemotherapy, or other medical treatments, receiving a wig can be life-changing.", user: vasiliki)
+post3.photo.attach(io: file, filename: "women-talking.jpg", content_type: "image/jpg")
+post3.save
 puts "All seeds successfully updated! The End."

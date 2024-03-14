@@ -4,6 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :acquisitions
+  has_many :posts, dependent: :destroy
   has_many :wigs, -> { where(admin: true) }
   validates :username, presence: true
   validates :avatar_url, presence: true

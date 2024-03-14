@@ -1,0 +1,41 @@
+<main class="Blog">
+  <section>
+    <div class="section-header">
+        <h1 class="section-heading">Blog</h1>
+        <div class="underline"></div>
+    </div>
+
+    <div class="blog-links-container">
+      <%= link_to "Add a post", new_post_path %>
+    </div>
+
+
+  <div class="blog-card-wrapper">
+    <div clas="blog-card-container">
+        <% @posts.each do |post| %>
+              <div class="card blog-card" style="width: 20rem; ">
+                  <%= cl_image_tag post.photo.key, alt:"photo of women", class: "index-img" %>
+                  <div class="card-body">
+                    <div class="blog-title-container">
+                      <h5 class="card-title"><%= post.title %></h5>
+                    </div>
+
+                      <p class="card-text"><%= post.description %></p>
+                  </div>
+
+                  <div class="card-body comment-icon-container">
+                    <a href="#" class="card-link">
+                      <i class="fa-regular fa-comment"></i>
+                    </a>
+                    <a href="#" class="card-link">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </div>
+              </div>
+          <% end %>
+
+      </div>
+    </div>
+
+  </section>
+</main>
