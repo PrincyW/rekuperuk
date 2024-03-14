@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :about_us, :splash, :faq]
+  skip_before_action :authenticate_user!, only: [ :home, :about_us, :splash, :faq, :filters]
 
   def splash
   end
@@ -11,5 +11,8 @@ class PagesController < ApplicationController
   end
 
   def faq
+  end
+
+  def filters
   end
 end

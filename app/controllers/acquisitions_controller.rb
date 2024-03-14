@@ -17,7 +17,7 @@ class AcquisitionsController < ApplicationController
     @acquisition.user = current_user
     @acquisition.wig = @wig
     if @acquisition.save
-      flash[:notice] = "Votre perruque a bien été réservée !"
+      # flash[:notice] = "Votre perruque a bien été réservée !"
       redirect_to confirmation_acquisition_path(@acquisition)
     else
       render :new
