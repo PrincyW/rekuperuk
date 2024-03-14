@@ -64,7 +64,7 @@
   font-weight: 500;
 }
 
-.save-btn {
+.submit-post {
   background-color: $green;
   color: $white;
   padding: 0.8rem 1rem;
@@ -73,4 +73,14 @@
   border-radius: 0.6rem;
   font-family: 'Zilla Slab';
   font-weight: 500;
+}
+
+.comment_content label {
+  color: $black;
+  font-family: 'Zilla Slab';
+}
+
+#comment_content {
+  width: 15rem;
+  height: 10rem;
 }
