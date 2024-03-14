@@ -56,12 +56,11 @@
   height: 10px;
 }
 
-.fa-solid fa-circle {
-  color: $dark-pink; /* Default color */
+.fa-solid.fa-circle {
   font-size: 25px; /* Adjust according to your icon's size */
 }
 
-.fa-solid fa-ruler {
+.fa-solid .fa-ruler {
   color: $dark-pink; /* Default color */
   font-size: 10px; /* Adjust according to your icon's size */
 }
@@ -71,21 +70,21 @@
   height: 25px;
 }
 
-.black {
+.brun {
   color: #000000;
 }
 
-.brown {
+.châtain {
   color: #8c523b;
 }
 
 .blonde {
   color: #d2b196;
 }
-.red {
+.roux {
   color: #890b10;
 }
 
-.grey {
+.sel-et-poivre {
   color: #95939e;
 }

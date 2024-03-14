@@ -1,0 +1,32 @@
+<form>
+  <h1>Choisissez une taille</h1>
+  <div class="criteria">
+    <input type="checkbox" id="size-small" name="size" value="Small">
+    <label for="size-small">S</label>
+  </div>
+  <div class="criteria">
+    <input type="checkbox" id="size-medium" name="size" value="Medium">
+    <label for="size-medium">M</label>
+  </div>
+  <div class="criteria">
+    <input type="checkbox" id="size-large" name="size" value="Large">
+    <label for="size-large">L</label>
+  </div>
+</form>
+
+<div class="next-previous">
+  <%# Button that directs to the precedent filter %>
+  <button class="dark-green-back-btn">
+    <i class="fa-solid fa-arrow-left"></i> <p>Précédent</p>
+  </button>
+
+  <%# Button that directs to the next filter if we don't want to filter %>
+  <button class="dark-green-back-btn">
+    <i class="fa-solid fa-arrow-right"></i> <p>Suivant</p>
+  </button>
+</div>
+
+<%# Button that directs directly to the index %>
+<button class="dark-pink-btn">
+  <%= link_to "Aller à la galerie", wigs_path %>
+</button>

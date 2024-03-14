@@ -3,10 +3,11 @@
   <section class="reservation-card">
     <div class="font-awesome-reservation-container">
           <i class="fa-solid fa-heart fa-5x"></i>
-          <h2>Merci d'avoir réservé une perruque!</h2>
+          <h4>Merci d'avoir réservé une perruque!</h4>
           <h6>Votre numéro de commande est : # <%= Acquisition.last.id %></h6>
           <% if Acquisition.last.delivery %>
             <p>Votre perruque sera livrée à l'adresse suivante :</p>
+            <br>
             <div class="address-recap-container">
                 <p>
                   <%= Acquisition.last.delivery_address %>

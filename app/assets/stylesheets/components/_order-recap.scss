@@ -1,15 +1,15 @@
 .individual-wig-recap {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 0.8rem;
 }
 
 #order-recap {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: justify;
-  width: 23rem;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20rem;
   height: 13rem;
   background-color: $white;
 }
@@ -21,8 +21,12 @@
 }
 
 .img-container-recap img {
-  width: 11rem;
+  width: 10.5rem;
   border-radius: 0.5rem;
+}
+
+#individual-wig-recap {
+  margin-left: 0.1rem;
 }
 
 #prev-btn {
@@ -35,6 +39,7 @@
   font-weight: 300;
   text-align: left;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
 }
 
 #individual-wig-recap h6 span {
@@ -44,8 +49,8 @@
 .prev-btn-container {
   height: 8px;
 }
+
 .container {
-  text-align: justify;
   width: 100%;
   margin: 0.8rem 0;
   p {
@@ -57,9 +62,10 @@
   }
 }
 
-#order-recap {
-  justify-content: space-evenly;
-  align-items: center;
+.individual-wig-recap h2 {
+  font-size: 1.2rem;
+  color: $dark-green;
+  font-weight: 600;
 }
 
 h3 {
@@ -71,15 +77,16 @@ h3 {
 }
 
 .h3-text {
-  // font-family: Zilla Slab;
-  // color: $dark-pink;
-  // font-size: 16px;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-h3 {
-  font-family: Zilla Slab;
+.h3-text h3 {
+  font-size: 0.9rem;
+}
+
+.individual-wig-recap h3 {
+  font-family: 'Zilla Slab';
   color: $dark-pink;
   font-size: 16px;
 }
@@ -112,12 +119,17 @@ h3 {
 
 .post-office-img,
 .delivery-on-site-img {
+  width: 10rem;
   background-color: $white;
   padding: 0.5rem;
   border: none;
   outline: none;
   border-radius: 0.8rem;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   p {
     text-align: center;
     font-size: 16px;
@@ -125,9 +137,17 @@ h3 {
   }
 }
 
+.post-office,
+.on-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .post-office-img img,
 .delivery-on-site-img img {
-  width: 10rem;
+  width: 6rem;
 }
 
 .delivery {
@@ -146,4 +166,40 @@ h3 {
   color: $dark-pink;
   margin-right: 8px;
   font-size: 16px;
+}
+
+.back-link-container-order-recap {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.back-link-order-recap {
+  color: $dark-pink;
+  text-align: center;
+  font-family: 'Zilla Slab';
+  font-weight: 700;
+}
+
+// Responsive
+
+@media(min-width: 330px) {
+  #order-recap {
+    width: 21rem;
+  }
+}
+
+@media(min-width: 370px) {
+  #order-recap {
+    width: 22rem;
+  }
+
+  .delivery-options {
+    justify-content: center;
+  }
+
+  .post-office-img img,
+  .delivery-on-site-img img {
+    width: 8rem;
+  }
 }

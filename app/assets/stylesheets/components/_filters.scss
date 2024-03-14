@@ -1,0 +1,15 @@
+.next-previous {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.previous {
+  display: flex;
+  align-items: left;
+}
+
+.next {
+  display: flex;
+  align-items: right;
+}
