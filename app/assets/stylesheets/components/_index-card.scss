@@ -56,12 +56,11 @@
   height: 10px;
 }
 
-.fa-solid fa-circle {
-  color: $dark-pink; /* Default color */
+.fa-solid.fa-circle {
   font-size: 25px; /* Adjust according to your icon's size */
 }
 
-.fa-solid fa-ruler {
+.fa-solid .fa-ruler {
   color: $dark-pink; /* Default color */
   font-size: 10px; /* Adjust according to your icon's size */
 }
