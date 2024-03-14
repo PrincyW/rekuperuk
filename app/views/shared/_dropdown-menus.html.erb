@@ -7,11 +7,11 @@
     Couleur
   </button>
   <ul class="dropdown-menu" id="filter-dropdown">
-    <li><%= link_to wigs_path(color: 'Black', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Brun<% end %></li>
+    <li><%= link_to wigs_path(color: 'Brun', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Brun<% end %></li>
     <li><%= link_to wigs_path(color: 'Blonde', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Blonde<% end %></li>
-    <li><%= link_to wigs_path(color: 'Brown', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Châtain<% end %></li>
-    <li><%= link_to wigs_path(color: 'Grey', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Sel et poivre<% end %></li>
-    <li><%= link_to wigs_path(color: 'Red', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Roux<% end %></li>
+    <li><%= link_to wigs_path(color: 'Châtain', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Châtain<% end %></li>
+    <li><%= link_to wigs_path(color: 'Sel et poivre', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Sel et poivre<% end %></li>
+    <li><%= link_to wigs_path(color: 'Roux', size: params[:size], texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>Roux<% end %></li>
   </ul>
 </div>
 
@@ -22,9 +22,9 @@
     Taille
   </button>
   <ul class="dropdown-menu" id="filter-dropdown">
-    <li><%= link_to wigs_path(color: params[:color], size: 'Small', texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>S<% end %></li>
-    <li><%= link_to wigs_path(color: params[:color], size: 'Medium', texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>M<% end %></li>
-    <li><%= link_to wigs_path(color: params[:color], size: 'Large', texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>L<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: 'S', texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>S<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: 'M', texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>M<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: 'L', texture: params[:texture], length: params[:length]), class: "dropdown-item" do %>L<% end %></li>
   </ul>
 </div>
 
@@ -35,9 +35,9 @@
     Texture
   </button>
   <ul class="dropdown-menu" id="filter-dropdown">
-    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: 'Smooth', length: params[:length]), class: "dropdown-item" do %>Lisse<% end %></li>
-    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: 'Curly', length: params[:length]), class: "dropdown-item" do %>Bouclé<% end %></li>
-    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: 'Frizzy', length: params[:length]), class: "dropdown-item" do %>Crépu<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: 'Lisse', length: params[:length]), class: "dropdown-item" do %>Lisse<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: 'Bouclé', length: params[:length]), class: "dropdown-item" do %>Bouclé<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: 'Crépu', length: params[:length]), class: "dropdown-item" do %>Crépu<% end %></li>
   </ul>
 </div>
 
@@ -49,9 +49,9 @@
     Coupe
   </button>
   <ul class="dropdown-menu" id="filter-dropdown">
-    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Short'), class: "dropdown-item" do %>Court<% end %></li>
-    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Bob'), class: "dropdown-item" do %>Carré<% end %></li>
-    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Mid-length'), class: "dropdown-item" do %>Mi-long<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Court'), class: "dropdown-item" do %>Court<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Carré'), class: "dropdown-item" do %>Carré<% end %></li>
+    <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Mi-long'), class: "dropdown-item" do %>Mi-long<% end %></li>
     <li><%= link_to wigs_path(color: params[:color], size: params[:size], texture: params[:texture], length: 'Long'), class: "dropdown-item" do %>Long<% end %></li>
   </ul>
 </div>

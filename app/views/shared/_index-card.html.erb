@@ -1,12 +1,12 @@
 <%= link_to wig_path(wig) do  %>
-<div class="wigs-cards">
-  <div class= "img-container-index">
-    <%= image_tag wig.photo1, alt:"photo of wig", class: "index-img" %>
-  </div>
+  <div class="wigs-cards">
+    <div class= "img-container-index">
+      <%= image_tag wig.photo1, alt:"photo of wig", class: "index-img" %>
+    </div>
 
-  <div class="card-body d-flex justify-content-around">
-      <span><i class="fa-solid fa-circle <%= wig.color.name.downcase %>" ></i></span>
-        <%= image_tag wig.size.icon, class: "size-icon"%>
+    <div class="card-body d-flex justify-content-around">
+      <span><i class="fa-solid fa-circle <%= wig.color.name.downcase.gsub(" ", "-") %>" ></i></span>
+      <%= image_tag wig.size.icon, class: "size-icon"%>
+    </div>
   </div>
-</div>
 <% end %>
