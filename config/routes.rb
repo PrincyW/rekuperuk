@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   get '/home', to: 'pages#home'
   get '/about', to: 'pages#about_us'
   get '/faq', to: 'pages#faq'
+  get '/conseils', to: 'pages#conseils'
   get '/filters', to: 'pages#filters'
+
 
   resources :donations, only: [:new, :create] do
       member do
