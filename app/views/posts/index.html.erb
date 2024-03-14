@@ -53,15 +53,19 @@
 
                             <%= simple_form_for [post, @comment] do |f| %>
                               <%= f.input :content , input_html: {row: 20, column: 15}%>
+                              <div class="modal-footer">
 
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal">Fermer</button>
+
                               <%= f.submit 'Soumettre', class: "submit-post" %>
-
-                          </div>
+                              <button type="button" class="close-btn" data-bs-dismiss="modal">Fermer</button>
 
                             <% end %>
+                          </div>
+
+
+                          </div>
+
+
                         </div>
                       </div>
                     </div>
