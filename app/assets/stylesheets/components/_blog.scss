@@ -1,0 +1,86 @@
+.blog {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.blog-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-card {
+  margin: 2rem;
+}
+
+.blog-title-container {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.blog-card img {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.blog-card h5 {
+  font-family: 'Zilla Slab';
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: $dark-pink;
+  text-align: center;
+}
+
+.comment-icon-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blog-comments-dropdown {
+  background-color: $white;
+  width: 70%;
+}
+
+// Modal
+
+.modal-header h1 {
+  color: $dark-pink;
+  font-weight: 800;
+}
+
+.modal-header span {
+  color: $black;
+}
+
+.close-btn {
+  background-color: $dark-pink;
+  color: $white;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.6rem;
+  font-family: 'Zilla Slab';
+  font-weight: 500;
+}
+
+.submit-post {
+  background-color: $green;
+  color: $white;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.6rem;
+  font-family: 'Zilla Slab';
+  font-weight: 500;
+}
+
+.comment_content label {
+  color: $black;
+  font-family: 'Zilla Slab';
+}
+
+#comment_content {
+  width: 15rem;
+  height: 10rem;
+}

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_11_135202) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_14_095137) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -65,6 +65,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_11_135202) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "comments", force: :cascade do |t|
+    t.text "content"
+    t.bigint "post_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_comments_on_post_id"
+  end
+
   create_table "donations", force: :cascade do |t|
     t.string "donator_email"
     t.string "description"
@@ -78,6 +86,23 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_11_135202) do
     t.string "icon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.boolean "content", default: true
+    t.bigint "post_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_likes_on_post_id"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "sizes", force: :cascade do |t|
@@ -131,6 +156,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_11_135202) do
   add_foreign_key "acquisitions", "wigs"
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "comments", "posts"
+  add_foreign_key "likes", "posts"
+  add_foreign_key "posts", "users"
   add_foreign_key "wigs", "colors"
   add_foreign_key "wigs", "lengths"
   add_foreign_key "wigs", "sizes"

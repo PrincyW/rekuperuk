@@ -16,6 +16,10 @@ Rails.application.routes.draw do
   get '/filters', to: 'pages#filters'
 
 
+  resources :posts, only: [:index, :show, :new, :create] do
+    resources :comments, only:  [:new, :create]
+    resources :likes, only:  [:new, :create]
+  end
   resources :donations, only: [:new, :create] do
       member do
         get  :confirmation
@@ -27,7 +31,6 @@ Rails.application.routes.draw do
       get  :recap
     end
   end
-
   resources :acquisitions, only: [] do
     member do
       get  :confirmation
