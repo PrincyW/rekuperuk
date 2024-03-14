@@ -28,6 +28,18 @@
   margin-bottom: 1.5rem;
 }
 
+.blog-links-container {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-links-container a {
+  font-family: 'Zilla Slab';
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $dark-pink;
+}
+
 .post-title label,
 .post_description label,
 .post_photo label {

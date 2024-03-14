@@ -34,5 +34,43 @@
 
 .comment-icon-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.blog-comments-dropdown {
+  background-color: $white;
+  width: 70%;
+}
+
+// Modal
+
+.modal-header h1 {
+  color: $dark-pink;
+  font-weight: 800;
+}
+
+.modal-header span {
+  color: $black;
+}
+
+.close-btn {
+  background-color: $dark-pink;
+  color: $white;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.6rem;
+  font-family: 'Zilla Slab';
+  font-weight: 500;
+}
+
+.save-btn {
+  background-color: $green;
+  color: $white;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.6rem;
+  font-family: 'Zilla Slab';
+  font-weight: 500;
 }

@@ -23,10 +23,44 @@
                       <p class="card-text"><%= post.description %></p>
                   </div>
 
-                  <div class="card-body comment-icon-container">
-                    <a href="#" class="card-link">
+                  <div class="card-body comment-icon-container d-inline-flex gap-1">
+                    <a href="#collapseExample" data-bs-toggle="dropdown" class="card-link" role="button" aria-expanded="false" aria-controls="collapseExample">
                       <i class="fa-regular fa-comment"></i>
                     </a>
+                    <%# Dropdown menu when clicking on comment icon %>
+                    <ul class="dropdown-menu blog-comments-dropdown">
+                        <li><p class="dropdown-item" href="#">Action</p></li>
+                        <li><p class="dropdown-item" href="#">Another action</p></li>
+                        <li><p class="dropdown-item" href="#">Something else here</p></li>
+                    </ul>
+                    <%# End of dropdown menu when clicking on comment icon %>
+
+                  <%# Link triggering modal to write a comment %>
+                    <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#exampleModal<%=post.id%>">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+
+                    <!-- Modal to write a comment -->
+                    <div class="modal fade write-comment-modal" id="exampleModal<%=post.id%>" tabindex="-1" aria-labelledby="exampleModal<%=post.id%>Label" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-6" id="exampleModal<%=post.id%>Label">Laisser un commentaire pour :<br>
+                            <span> <%= post.title %></span> </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center rounded-4">
+                            <textarea name="" id="" cols="28" rows="5"></textarea>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal">Fermer</button>
+                            <button type="button" class="save-btn">Sauvegarder</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <%# End of Modal to write a comment %>
+
                     <a href="#" class="card-link">
                       <i class="fa-regular fa-heart"></i>
                     </a>
@@ -36,6 +70,26 @@
 
       </div>
     </div>
-
   </section>
 </main>
+
+<%# Write a comment %>
+
+
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
