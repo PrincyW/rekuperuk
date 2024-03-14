@@ -40,10 +40,11 @@
   color: $dark-pink;
 }
 
-.post-title label,
+.post_title label,
 .post_description label,
 .post_photo label {
   font-family: 'Zilla Slab';
+  font-size: 1rem;
 }
 
 .post_description label {
