@@ -19,26 +19,26 @@ User.create!(email: "vasiliki@mail.com", password: "wigwig", username: "vasiliki
 User.create!(email: "princy@mail.com", password: "wigwig", username: "princy", avatar_url: "https://media.licdn.com/dms/image/D4E03AQER3O8dl-DGIA/profile-displayphoto-shrink_800_800/0/1706011684644?e=2147483647&v=beta&t=192m5OmltKVvd_2_SHM0YynPn3bIIWe5-vxy7HcqVoY")
 
 puts "Creation of colors..."
-black = Color.create!(name: "Black", hexa: "#000000")
-brown = Color.create!(name: "Brown", hexa: "#8C523B")
+black = Color.create!(name: "Brun", hexa: "#000000")
+brown = Color.create!(name: "Châtain", hexa: "#8C523B")
 blonde = Color.create!(name: "Blonde", hexa: "#D2B196")
-red = Color.create!(name: "Red", hexa: "#890B10")
-grey = Color.create!(name: "Grey", hexa: "#95939E")
+red = Color.create!(name: "Roux", hexa: "#890B10")
+grey = Color.create!(name: "Sel et poivre", hexa: "#95939E")
 
 puts "Creation of textures..."
-smooth = Texture.create!(name: "Smooth", icon: "smooth.png")
-curly = Texture.create!(name: "Curly", icon: "curly.png")
-frizzy = Texture.create!(name: "Frizzy", icon: "frizzy.jpg")
+smooth = Texture.create!(name: "Lisse", icon: "smooth.png")
+curly = Texture.create!(name: "Bouclé", icon: "curly.png")
+frizzy = Texture.create!(name: "Crépu", icon: "frizzy.jpg")
 
 puts "Creation of sizes..."
-small = Size.create!(name: "Small", icon: "small.png")
-medium = Size.create!(name: "Medium", icon: "medium.png")
-large = Size.create!(name: "Large", icon: "large.png")
+small = Size.create!(name: "S", icon: "small.png")
+medium = Size.create!(name: "M", icon: "medium.png")
+large = Size.create!(name: "L", icon: "large.png")
 
 puts "Creation of lengths..."
-short = Length.create!(name: "Short", icon: "short.png")
-bob = Length.create!(name: "Bob", icon: "bob.png")
-mid_length = Length.create!(name: "Mid-length", icon: "mid_long.png")
+short = Length.create!(name: "Court", icon: "short.png")
+bob = Length.create!(name: "Carré", icon: "bob.png")
+mid_length = Length.create!(name: "Mi-long", icon: "mid_long.png")
 long = Length.create!(name: "Long", icon: "long.png")
 
 puts "Creation of wigs..."
