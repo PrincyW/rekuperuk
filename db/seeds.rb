@@ -28,7 +28,7 @@ grey = Color.create!(name: "Sel et poivre", hexa: "#95939E")
 puts "Creation of textures..."
 smooth = Texture.create!(name: "Lisse", icon: "smooth.png")
 curly = Texture.create!(name: "Bouclé", icon: "curly.png")
-frizzy = Texture.create!(name: "Crépu", icon: "frizzy.jpg")
+frizzy = Texture.create!(name: "Crépu", icon: "frizzy.png")
 
 puts "Creation of sizes..."
 small = Size.create!(name: "S", icon: "small.png")
